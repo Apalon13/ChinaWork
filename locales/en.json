@@ -1,0 +1,33 @@
+{
+  "companyName": "Dragon Biztrip",
+  "pageTitle": "Visa Processing",
+  "nav": {
+    "home": "Home",
+    "visaTypes": "Visa Types",
+    "countries": "Countries",
+    "services": "Services",
+    "about": "About Us",
+    "contacts": "Contacts"
+  },
+  "services": {
+    "tourism": "Tourist Visas",
+    "business": "Business Visas",
+    "work": "Work Visas",
+    "tourismDesc": "Visa processing for travel and vacation",
+    "businessDesc": "Visas for business trips and negotiations",
+    "workDesc": "Documentation for employment abroad"
+  },
+  "footer": {
+    "contacts": "Contact Information",
+    "legal": "Legal Details",
+    "address": "Address",
+    "hours": "Working Hours",
+    "weekdays": "Mon-Fri: 9:00 AM - 6:00 PM",
+    "weekend": "Sat-Sun: Closed",
+    "copyright": "All rights reserved."
+  },
+  "buttons": {
+    "applyOnline": "Online Application",
+    "selectLanguage": "Select Language"
+  }
+}

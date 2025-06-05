@@ -1,0 +1,33 @@
+{
+  "companyName": "龙商旅",
+  "pageTitle": "签证办理",
+  "nav": {
+    "home": "首页",
+    "visaTypes": "签证类型",
+    "countries": "国家",
+    "services": "服务",
+    "about": "关于我们",
+    "contacts": "联系方式"
+  },
+  "services": {
+    "tourism": "旅游签证",
+    "business": "商务签证",
+    "work": "工作签证",
+    "tourismDesc": "为您办理旅游度假签证",
+    "businessDesc": "商务出差和谈判签证服务",
+    "workDesc": "海外就业文件办理"
+  },
+  "footer": {
+    "contacts": "联系信息",
+    "legal": "法律信息",
+    "address": "地址",
+    "hours": "工作时间",
+    "weekdays": "周一至周五: 9:00 - 18:00",
+    "weekend": "周六周日: 休息",
+    "copyright": "版权所有。"
+  },
+  "buttons": {
+    "applyOnline": "在线申请",
+    "selectLanguage": "选择语言"
+  }
+}
