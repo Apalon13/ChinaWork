@@ -3,31 +3,49 @@
   "pageTitle": "签证办理",
   "nav": {
     "home": "首页",
-    "visaTypes": "签证类型",
-    "countries": "国家",
+    "visas": "签证",
     "services": "服务",
     "about": "关于我们",
-    "contacts": "联系方式"
+    "contacts": "联系方式",
+    "links": "有用链接",
+    "partners": "合作伙伴"
   },
-  "services": {
-    "tourism": "旅游签证",
-    "business": "商务签证",
-    "work": "工作签证",
-    "tourismDesc": "为您办理旅游度假签证",
-    "businessDesc": "商务出差和谈判签证服务",
-    "workDesc": "海外就业文件办理"
+  "content": {
+    "welcomeTitle": "欢迎来到龙商旅",
+    "welcomeText": "您可靠的商务旅行和签证办理合作伙伴！我们专注于帮助中国商人在俄罗斯、印度和罗马尼亚拓展业务。龙商旅提供专业的商务旅行组织和签证办理服务，包括俄罗斯、印度、越南和申根签证。",
+    "whyChooseUs": "为什么选择我们？",
+    "benefits": [
+      "合法可靠：我们遵守所有法律规定并为服务提供保障",
+      "广泛服务：不仅协助签证办理，还帮助在俄罗斯、印度、罗马尼亚和欧盟国家注册公司",
+      "丰富经验：我们的团队在商务旅行和签证办理方面拥有丰富经验",
+      "个性化服务：为每位客户提供定制解决方案",
+      "全面服务：从签证支持到完整的行程组织"
+    ],
+    "ourServices": "我们的服务",
+    "visaProcessing": {
+      "title": "签证办理",
+      "description": "我们了解签证申请流程可能很复杂。我们在立法方面的经验和深厚知识将帮助您快速且无需额外费用获得俄罗斯、印度或越南签证。我们保证遵守所有法律规范，在每个阶段提供支持。"
+    },
+    "businessTrips": {
+      "title": "商务旅行",
+      "description": "我们根据您的要求组织商务旅行。在上述国家拥有广泛的联系网络，我们可以帮助您建立必要的联系。没有语言障碍并注重细节，您的旅行将非常高效。"
+    },
+    "businessConsultations": {
+      "title": "商业咨询",
+      "description": "我们将帮助您了解在新国家开展业务的特殊性，并为您的业务提供最佳解决方案。"
+    },
+    "cta": {
+      "title": "加入我们的满意客户行列",
+      "text": "与龙商旅一起发现新机遇。联系我们获取咨询，详细讨论您的需求。"
+    }
   },
   "footer": {
-    "contacts": "联系信息",
-    "legal": "法律信息",
+    "contactInfo": "联系信息",
+    "legalDetails": "法律信息",
     "address": "地址",
-    "hours": "工作时间",
-    "weekdays": "周一至周五: 9:00 - 18:00",
-    "weekend": "周六周日: 休息",
-    "copyright": "版权所有。"
-  },
-  "buttons": {
-    "applyOnline": "在线申请",
-    "selectLanguage": "选择语言"
+    "workingHours": "工作时间",
+    "weekdays": "周一至周五: ",
+    "weekend": "周六周日: ",
+    "copyright": "版权所有"
   }
 }

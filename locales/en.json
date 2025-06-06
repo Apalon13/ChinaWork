@@ -3,31 +3,49 @@
   "pageTitle": "Visa Processing",
   "nav": {
     "home": "Home",
-    "visaTypes": "Visa Types",
-    "countries": "Countries",
+    "visas": "Visas",
     "services": "Services",
     "about": "About Us",
-    "contacts": "Contacts"
+    "contacts": "Contacts",
+    "links": "Useful Links",
+    "partners": "Partners"
   },
-  "services": {
-    "tourism": "Tourist Visas",
-    "business": "Business Visas",
-    "work": "Work Visas",
-    "tourismDesc": "Visa processing for travel and vacation",
-    "businessDesc": "Visas for business trips and negotiations",
-    "workDesc": "Documentation for employment abroad"
+  "content": {
+    "welcomeTitle": "Welcome to Dragon Biztrip",
+    "welcomeText": "Your reliable partner in business travel organization and visa processing! We specialize in assisting Chinese businessmen looking to expand their horizons in Russia, India and Romania. Dragon Biztrip offers professional and affordable services for business trips organization and visa processing for Russia, India, Vietnam and Schengen visas.",
+    "whyChooseUs": "Why Choose Us?",
+    "benefits": [
+      "Legality and reliability: We comply with all legal regulations and provide guarantees for our services.",
+      "Wide opportunities: We assist not only with visas but also with company formation in Russia, India, Romania and EU countries.",
+      "Extensive experience: Our team has significant experience in business trips and visa processing.",
+      "Personal approach: Customized solutions for each client.",
+      "Comprehensive services: From visa support to full trip organization."
+    ],
+    "ourServices": "Our Services",
+    "visaProcessing": {
+      "title": "Visa Processing",
+      "description": "We understand that the visa application process can be complicated. Our experience and deep knowledge of legislation will help you quickly and without unnecessary costs obtain visas for Russia, India or Vietnam. We guarantee compliance with all legal norms, providing support at every stage."
+    },
+    "businessTrips": {
+      "title": "Business Trips",
+      "description": "We organize business trips according to all your requirements. With extensive contacts in the mentioned countries, we can help you establish necessary connections. Without language barriers and with attention to details, your trip will be maximally productive."
+    },
+    "businessConsultations": {
+      "title": "Business Consultations",
+      "description": "We'll help you understand the specifics of doing business in new countries and suggest optimal solutions for your business."
+    },
+    "cta": {
+      "title": "Join Our Satisfied Clients",
+      "text": "Discover new opportunities with Dragon Biztrip. Contact us for a consultation to discuss your needs in detail."
+    }
   },
   "footer": {
-    "contacts": "Contact Information",
-    "legal": "Legal Details",
+    "contactInfo": "Contact Information",
+    "legalDetails": "Legal Details",
     "address": "Address",
-    "hours": "Working Hours",
-    "weekdays": "Mon-Fri: 9:00 AM - 6:00 PM",
-    "weekend": "Sat-Sun: Closed",
+    "workingHours": "Working Hours",
+    "weekdays": "Mon-Fri: ",
+    "weekend": "Sat-Sun: ",
     "copyright": "All rights reserved."
-  },
-  "buttons": {
-    "applyOnline": "Online Application",
-    "selectLanguage": "Select Language"
   }
 }
