@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dragon Biztrip - Контакты</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <script src="../buttonLanguage.js"></script>
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <div class="header-top">
+                <button class="burger-menu" id="burgerMenu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                <div class="logo">Dragon Biztrip</div>
+                <div class="language-switcher">
+                    <button class="language-btn" id="languageButton">
+                        <i class="fas fa-globe"></i>
+                        <span class="language-text">Русский</span>
+                        <i class="fas fa-caret-down"></i>
+                    </button>
+                    <div class="language-dropdown" id="languageDropdown">
+                        <a href="#" data-lang="en"><i class="fas fa-language"></i> English</a>
+                        <a href="#" data-lang="zh"><i class="fas fa-language"></i> 中文</a>
+                        <a href="#" data-lang="ru"><i class="fas fa-language"></i> Русский</a>
+                    </div>
+                </div>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="../index.html">Главная</a></li>
+                    <li><a href="visas.html">Визы</a></li>
+                    <li><a href="services.html">Услуги</a></li>
+                    <li><a href="about.html">О компании</a></li>
+                    <li><a href="contacts.html" class="active">Контакты</a></li>
+                    <li><a href="links.html">Полезные ссылки</a></li>
+                    <li><a href="partners.html">Партнеры</a></li>
+                </ul>
+            </nav>
+            <div class="mobile-menu" id="mobileMenu">
+                <nav>
+                    <ul>
+                        <li><a href="../index.html">Главная</a></li>
+                        <li><a href="visas.html">Визы</a></li>
+                        <li><a href="services.html">Услуги</a></li>
+                        <li><a href="about.html">О компании</a></li>
+                        <li><a href="contacts.html">Контакты</a></li>
+                        <li><a href="links.html">Полезные ссылки</a></li>
+                        <li><a href="partners.html">Партнеры</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <main class="main-container">
+        <div class="content-row">
+            <div class="text-column">
+                <h2 class="section-title">Контактная информация</h2>
+                
+                <div class="service-card">
+                    <h3>Наши контакты</h3>
+                    <ul class="benefits-list">
+                        <li><i class="fas fa-phone"></i> Телефон: +7 (XXX) XXX-XX-XX</li>
+                        <li><i class="fas fa-envelope"></i> Email: info@dragonbiztrip.com</li>
+                        <li><i class="fas fa-map-marker-alt"></i> Адрес: г. Москва, ул. Примерная, д. 123</li>
+                        <li><i class="fas fa-clock"></i> Режим работы: Пн-Пт: 9:00 - 18:00</li>
+                    </ul>
+                </div>
+
+                <div class="service-card">
+                    <h3>Свяжитесь с нами</h3>
+                    <form class="contact-form">
+                        <div class="form-group">
+                            <label for="name">Ваше имя:</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="email">Email:</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="phone">Телефон:</label>
+                            <input type="tel" id="phone" name="phone">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="message">Сообщение:</label>
+                            <textarea id="message" name="message" rows="5" required></textarea>
+                        </div>
+                        
+                        <button type="submit" class="submit-btn">Отправить</button>
+                    </form>
+                </div>
+
+                <div class="service-card">
+                    <h3>Мы в социальных сетях</h3>
+                    <div class="social-links">
+                        <a href="#" class="social-link"><i class="fab fa-weixin"></i> WeChat</a>
+                        <a href="#" class="social-link"><i class="fab fa-telegram"></i> Telegram</a>
+                        <a href="#" class="social-link"><i class="fab fa-whatsapp"></i> WhatsApp</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    
+    <footer>
+        <div class="footer-container">
+            <div class="footer-info">
+                <div>
+                    <h4>Контактная информация</h4>
+                    <p>Телефон: </p>
+                    <p>Email: </p>
+                </div>
+                
+                <div>
+                    <h4>Юридические данные</h4>
+                    <p>ИНН: </p>
+                    <p>ОГРН: </p>
+                </div>
+                
+                <div>
+                    <h4>Адрес</h4>
+                    <p></p>
+                </div>
+                
+                <div>
+                    <h4>Режим работы</h4>
+                    <p>Пн-Пт: </p>
+                    <p>Сб-Вс: </p>
+                </div>
+            </div>
+            
+            <div class="copyright">
+                &copy; 2023 Dragon Biztrip. Все права защищены.
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const languageBtn = document.querySelector('.language-btn');
+            const languageDropdown = document.querySelector('.language-dropdown');
+            const burgerMenu = document.getElementById('burgerMenu');
+            const mobileMenu = document.getElementById('mobileMenu');
+            
+            languageBtn.addEventListener('click', function(e) {
+                e.stopPropagation();
+                languageDropdown.style.display = languageDropdown.style.display === 'block' ? 'none' : 'block';
+            });
+            
+            document.addEventListener('click', function() {
+                languageDropdown.style.display = 'none';
+            });
+
+            burgerMenu.addEventListener('click', function() {
+                mobileMenu.classList.toggle('active');
+                document.body.style.overflow = mobileMenu.classList.contains('active') ? 'hidden' : '';
+            });
+
+            const mobileLinks = mobileMenu.querySelectorAll('a');
+            mobileLinks.forEach(link => {
+                link.addEventListener('click', () => {
+                    mobileMenu.classList.remove('active');
+                    document.body.style.overflow = '';
+                });
+            });
+        });
+    </script>
+</body>
+</html> 
