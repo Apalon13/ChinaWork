@@ -1,5 +1,5 @@
 {
-  "companyName": "龙商旅",
+  "companyName": "Dragon Biztrip",
   "pageTitle": "签证办理",
   "nav": {
     "home": "首页",
@@ -11,8 +11,8 @@
     "partners": "合作伙伴"
   },
   "content": {
-    "welcomeTitle": "欢迎来到龙商旅",
-    "welcomeText": "您可靠的商务旅行和签证办理合作伙伴！我们专注于帮助中国商人在俄罗斯、印度和罗马尼亚拓展业务。龙商旅提供专业的商务旅行组织和签证办理服务，包括俄罗斯、印度、越南和申根签证。",
+    "welcomeTitle": "欢迎来到Dragon Biztrip",
+    "welcomeText": "您可靠的商务旅行和签证办理合作伙伴！我们专注于帮助中国商人在俄罗斯、印度和罗马尼亚拓展业务。Dragon Biztrip提供专业的商务旅行组织和签证办理服务，包括俄罗斯、印度、越南和申根签证。",
     "whyChooseUs": "为什么选择我们？",
     "benefits": [
       "合法可靠：我们遵守所有法律规定并为服务提供保障",
@@ -36,7 +36,7 @@
     },
     "cta": {
       "title": "加入我们的满意客户行列",
-      "text": "与龙商旅一起发现新机遇。联系我们获取咨询，详细讨论您的需求。"
+      "text": "与Dragon Biztrip一起发现新机遇。联系我们获取咨询，详细讨论您的需求。"
     }
   },
   "footer": {

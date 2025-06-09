@@ -12,6 +12,11 @@
     <header>
         <div class="header-container">
             <div class="header-top">
+                <button class="burger-menu" id="burgerMenu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
                 <div class="logo">Dragon Biztrip</div>
                 <div class="language-switcher">
                     <button class="language-btn" id="languageButton">
@@ -37,6 +42,19 @@
                     <li><a href="#">Партнеры</a></li>
                 </ul>
             </nav>
+            <div class="mobile-menu" id="mobileMenu">
+                <nav>
+                    <ul>
+                        <li><a href="#">Главная</a></li>
+                        <li><a href="#">Визы</a></li>
+                        <li><a href="#">Услуги</a></li>
+                        <li><a href="#">О компании</a></li>
+                        <li><a href="#">Контакты</a></li>
+                        <li><a href="#">Полезные ссылки</a></li>
+                        <li><a href="#">Партнеры</a></li>
+                    </ul>
+                </nav>
+            </div>
         </div>
     </header>
 
@@ -150,6 +168,8 @@
         document.addEventListener('DOMContentLoaded', function() {
             const languageBtn = document.querySelector('.language-btn');
             const languageDropdown = document.querySelector('.language-dropdown');
+            const burgerMenu = document.getElementById('burgerMenu');
+            const mobileMenu = document.getElementById('mobileMenu');
             
             languageBtn.addEventListener('click', function(e) {
                 e.stopPropagation();
@@ -158,6 +178,21 @@
             
             document.addEventListener('click', function() {
                 languageDropdown.style.display = 'none';
+            });
+
+            // Обработка бургер меню
+            burgerMenu.addEventListener('click', function() {
+                mobileMenu.classList.toggle('active');
+                document.body.style.overflow = mobileMenu.classList.contains('active') ? 'hidden' : '';
+            });
+
+            // Закрытие меню при клике на ссылку
+            const mobileLinks = mobileMenu.querySelectorAll('a');
+            mobileLinks.forEach(link => {
+                link.addEventListener('click', () => {
+                    mobileMenu.classList.remove('active');
+                    document.body.style.overflow = '';
+                });
             });
         });
     </script>
