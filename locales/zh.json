@@ -4,11 +4,54 @@
   "nav": {
     "home": "首页",
     "visas": "签证",
+    "business_tours": "商务旅游",
     "services": "服务",
     "about": "关于我们",
     "contacts": "联系方式",
     "links": "有用链接",
     "partners": "合作伙伴"
+  },
+  "home": {
+    "hero": {
+      "title": "Dragon Biztrip",
+      "subtitle": "您在中国商务旅行组织方面的可靠合作伙伴",
+      "cta": "联系我们"
+    },
+    "services": {
+      "title": "我们的服务",
+      "visas": {
+        "title": "签证支持",
+        "text": "办理各类中国签证，包括商务签证和商务旅行签证"
+      },
+      "tours": {
+        "title": "商务旅游",
+        "text": "组织商务旅行，包括接送、住宿和陪同服务"
+      },
+      "meetings": {
+        "title": "会议组织",
+        "text": "与中国合作伙伴的业务会议准备和安排"
+      },
+      "learn_more": "了解更多"
+    },
+    "advantages": {
+      "title": "为什么选择我们",
+      "experience": {
+        "title": "经验",
+        "text": "10年以上商务旅行组织经验"
+      },
+      "team": {
+        "title": "团队",
+        "text": "专业团队"
+      },
+      "support": {
+        "title": "支持",
+        "text": "24/7全天候客户支持"
+      },
+      "quality": {
+        "title": "质量",
+        "text": "服务质量保证"
+      }
+    }
   },
   "content": {
     "welcomeTitle": "欢迎来到Dragon Biztrip",
@@ -39,13 +82,344 @@
       "text": "与Dragon Biztrip一起发现新机遇。联系我们获取咨询，详细讨论您的需求。"
     }
   },
+  "business_tours": {
+    "title": "中国商务旅游",
+    "tours": {
+      "title": "中国商务旅游",
+      "items": [
+        "组织中国商务旅行",
+        "参观展览和会议",
+        "组织商务会议",
+        "企业参观"
+      ]
+    },
+    "individual": {
+      "title": "个性化方案",
+      "items": [
+        "个人导游翻译",
+        "接送和交通服务",
+        "商务酒店预订",
+        "商务晚宴组织"
+      ]
+    },
+    "additional": {
+      "title": "附加服务",
+      "items": [
+        "商务文件准备",
+        "24/7全天候支持",
+        "机票预订",
+        "旅行保险"
+      ]
+    },
+    "advantages": {
+      "title": "与我们合作的优势",
+      "items": [
+        "10年以上经验",
+        "为每位客户提供个性化服务",
+        "专业团队",
+        "服务质量保证"
+      ]
+    }
+  },
   "footer": {
-    "contactInfo": "联系信息",
-    "legalDetails": "法律信息",
-    "address": "地址",
-    "workingHours": "工作时间",
-    "weekdays": "周一至周五: ",
-    "weekend": "周六周日: ",
+    "contacts": {
+      "title": "联系信息",
+      "phone": "电话",
+      "email": "电子邮件"
+    },
+    "legal": {
+      "title": "法律信息",
+      "inn": "税号",
+      "ogrn": "注册号"
+    },
+    "address": {
+      "title": "地址"
+    },
+    "working_hours": {
+      "title": "工作时间",
+      "weekdays": "周一至周五",
+      "weekend": "周六至周日"
+    },
     "copyright": "版权所有"
+  },
+  "common": {
+    "select_language": "选择语言",
+    "loading": "加载中...",
+    "error": "发生错误",
+    "retry": "重试",
+    "close": "关闭",
+    "menu": "菜单"
+  },
+  "about": {
+    "title": "关于 Dragon Biztrip",
+    "mission": {
+      "title": "我们的使命",
+      "text": "Dragon Biztrip 是一家专门为中国商人组织商务旅行和办理签证的公司。我们的使命是使国际商务交流过程尽可能简单高效。"
+    },
+    "history": {
+      "title": "公司历史",
+      "text": "Dragon Biztrip 成立于2023年，凭借专业的服务和对国际商务的深入理解，迅速赢得了客户的信任。我们帮助中国企业家在俄罗斯、印度和欧盟国家成功发展业务。"
+    },
+    "advantages": {
+      "title": "我们的优势",
+      "items": [
+        "拥有多年经验的专业团队",
+        "深入了解各国法律法规",
+        "为每位客户提供个性化服务",
+        "全程全方位支持",
+        "多语言支持",
+        "严格遵守保密制度"
+      ]
+    },
+    "values": {
+      "title": "我们的价值观",
+      "items": [
+        "专业和负责",
+        "诚实和透明",
+        "以客户为中心",
+        "创新解决方案",
+        "持续发展"
+      ]
+    }
+  },
+  "visas": {
+    "title": "签证",
+    "subtitle": "办理各类签证",
+    "types": {
+      "business": {
+        "title": "商务签证",
+        "description": "用于商务旅行和合作伙伴会议"
+      },
+      "tourist": {
+        "title": "旅游签证",
+        "description": "用于旅游和休闲旅行"
+      },
+      "work": {
+        "title": "工作签证",
+        "description": "用于工作和长期居留"
+      },
+      "student": {
+        "title": "学生签证",
+        "description": "用于在教育机构学习"
+      }
+    },
+    "process": {
+      "title": "申请流程",
+      "steps": [
+        "咨询和签证类型选择",
+        "准备文件",
+        "提交申请",
+        "签证签发"
+      ]
+    },
+    "requirements": {
+      "title": "所需文件",
+      "list": [
+        "护照",
+        "照片",
+        "申请表",
+        "邀请函",
+        "根据签证类型的额外文件"
+      ]
+    }
+  },
+  "services": {
+    "title": "我们的服务",
+    "list": {
+      "visa_support": {
+        "title": "签证支持",
+        "description": "全面的签证申请支持：",
+        "items": [
+          "签证类型咨询",
+          "文件准备",
+          "表格填写协助",
+          "领事馆陪同",
+          "文件翻译"
+        ]
+      },
+      "business_trips": {
+        "title": "商务旅行组织",
+        "description": "完整的商务旅行支持：",
+        "items": [
+          "酒店预订",
+          "合作伙伴会议组织",
+          "接送和交通服务",
+          "翻译服务",
+          "24/7全天候支持"
+        ]
+      },
+      "consulting": {
+        "title": "商务咨询",
+        "description": "专业商务咨询服务：",
+        "items": [
+          "市场分析",
+          "合作伙伴寻找",
+          "法律支持",
+          "税务咨询",
+          "企业设立协助"
+        ]
+      },
+      "additional": {
+        "title": "附加服务",
+        "description": "舒适的商务运营附加服务：",
+        "items": [
+          "文件认证",
+          "文件合法化",
+          "公证翻译",
+          "保险服务",
+          "机票预订"
+        ]
+      }
+    }
+  },
+  "contacts": {
+    "title": "Dragon Biztrip - 联系方式",
+    "main_title": "联系信息",
+    "our_contacts": {
+      "title": "我们的联系方式",
+      "phone": "电话",
+      "email": "电子邮件",
+      "address": "地址",
+      "working_hours": "工作时间"
+    },
+    "form": {
+      "title": "联系我们",
+      "name": "您的姓名：",
+      "email": "电子邮件：",
+      "phone": "电话：",
+      "message": "留言：",
+      "submit": "发送"
+    },
+    "social": {
+      "title": "关注我们的社交媒体"
+    }
+  },
+  "links": {
+    "title": "实用链接",
+    "official": {
+      "title": "官方资源",
+      "items": {
+        "russia": "俄罗斯外交部",
+        "china": "中国外交部",
+        "india": "印度外交部",
+        "romania": "罗马尼亚外交部"
+      }
+    },
+    "visa": {
+      "title": "签证中心",
+      "items": {
+        "russia": "俄罗斯驻华签证中心",
+        "india": "印度驻华签证中心",
+        "romania": "罗马尼亚驻华签证中心"
+      }
+    },
+    "travel": {
+      "title": "旅行资源",
+      "items": {
+        "tripadvisor": "TripAdvisor - 旅行评论和提示",
+        "booking": "Booking.com - 酒店预订",
+        "skyscanner": "Skyscanner - 航班搜索"
+      }
+    },
+    "business": {
+      "title": "商业资源",
+      "items": {
+        "worldbank": "世界银行 - 经济信息",
+        "wto": "世贸组织 - 国际贸易信息",
+        "chamber": "各国商会"
+      }
+    }
+  },
+  "partners": {
+    "title": "我们的合作伙伴",
+    "visa": {
+      "title": "签证中心",
+      "items": {
+        "vfs": "VFS Global - 国际签证中心",
+        "pony": "Pony Express - 快递服务",
+        "centers": "俄罗斯、印度和罗马尼亚签证中心"
+      }
+    },
+    "transport": {
+      "title": "运输公司",
+      "items": {
+        "airlines": "俄罗斯和中国航空公司",
+        "international": "国际运输公司",
+        "local": "本地运输服务"
+      }
+    },
+    "hotels": {
+      "title": "酒店和住宿",
+      "items": {
+        "chains": "国际连锁酒店",
+        "business": "俄罗斯、印度和罗马尼亚商务酒店",
+        "apartments": "长期住宿公寓"
+      }
+    },
+    "business": {
+      "title": "商业合作伙伴",
+      "items": {
+        "chambers": "俄罗斯、中国、印度和罗马尼亚商会",
+        "associations": "商业协会",
+        "consulting": "咨询公司",
+        "legal": "律师事务所"
+      }
+    },
+    "join": {
+      "title": "成为我们的合作伙伴",
+      "description": "我们始终欢迎新的合作伙伴关系。如果您对合作感兴趣，请通过联系页面的反馈表与我们联系。",
+      "button": "联系我们"
+    }
+  },
+  "main": {
+    "title": "Dragon Biztrip - 签证服务",
+    "welcome": {
+      "title": "欢迎来到 Dragon Biztrip",
+      "description": "您可靠的商务旅行组织和签证办理合作伙伴！我们专门帮助中国商人在俄罗斯、印度和罗马尼亚拓展业务。Dragon Biztrip 提供专业且价格合理的商务旅行组织和俄罗斯、印度、越南及申根签证办理服务。"
+    },
+    "why_us": {
+      "title": "为什么选择我们？",
+      "benefits": {
+        "legality": {
+          "title": "合法性和可靠性：",
+          "description": "我们遵守所有法律要求并为我们的服务提供保证。"
+        },
+        "opportunities": {
+          "title": "广泛的机会：",
+          "description": "我们不仅帮助办理签证，还协助在俄罗斯、印度、罗马尼亚和欧盟国家成立公司。"
+        },
+        "experience": {
+          "title": "丰富经验：",
+          "description": "我们的团队在商务旅行和签证办理方面拥有丰富经验。"
+        },
+        "personal": {
+          "title": "个性化服务：",
+          "description": "为每位客户提供个性化解决方案。"
+        },
+        "comprehensive": {
+          "title": "全方位服务：",
+          "description": "从签证支持到全程旅行组织。"
+        }
+      }
+    },
+    "services": {
+      "title": "我们的服务",
+      "visas": {
+        "title": "签证办理",
+        "description": "我们理解签证申请过程可能很复杂。我们的经验和深厚的法律知识将帮助您快速且经济地获得俄罗斯、印度或越南的签证。我们保证符合所有法律要求，在每个阶段提供支持。"
+      },
+      "trips": {
+        "title": "商务旅行",
+        "description": "我们根据您的偏好组织商务旅行。凭借在上述国家的广泛人脉，我们帮助建立必要的联系。没有语言障碍，注重细节，您的旅行将获得最大效益。"
+      },
+      "consulting": {
+        "title": "商务咨询",
+        "description": "我们帮助您了解在新国家开展业务的具体情况，并为您的业务提供最佳解决方案。"
+      }
+    },
+    "cta": {
+      "title": "加入我们满意的客户行列",
+      "description": "与 Dragon Biztrip 一起发现新的机会。联系我们获取咨询并详细讨论您的需求。"
+    }
   }
 }

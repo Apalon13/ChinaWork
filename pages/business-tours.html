@@ -3,10 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title data-i18n="contacts.title">Dragon Biztrip - Контакты</title>
+    <title>Dragon Biztrip - Деловые туры</title>
     <link rel="stylesheet" href="../styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-    <script src="../buttonLanguage.js"></script>
+    <script src="../buttonLanguage.js" defer></script>
 </head>
 <body>
     <header>
@@ -37,7 +37,7 @@
                     <li><a href="business-tours.html" data-i18n="nav.business_tours">Деловые туры</a></li>
                     <li><a href="services.html" data-i18n="nav.services">Услуги</a></li>
                     <li><a href="about.html" data-i18n="nav.about">О компании</a></li>
-                    <li><a href="contacts.html" class="active" data-i18n="nav.contacts">Контакты</a></li>
+                    <li><a href="contacts.html" data-i18n="nav.contacts">Контакты</a></li>
                     <li><a href="links.html" data-i18n="nav.links">Полезные ссылки</a></li>
                     <li><a href="partners.html" data-i18n="nav.partners">Партнеры</a></li>
                 </ul>
@@ -62,57 +62,51 @@
     <main class="main-container">
         <div class="content-row">
             <div class="text-column">
-                <h2 class="section-title" data-i18n="contacts.main_title">Контактная информация</h2>
+                <h2 class="section-title" data-i18n="business_tours.title">Деловые туры в Китай</h2>
                 
                 <div class="service-card">
-                    <h3 data-i18n="contacts.our_contacts.title">Наши контакты</h3>
+                    <h3 data-i18n="business_tours.tours.title">Деловые туры в Китай</h3>
                     <ul class="benefits-list">
-                        <li><i class="fas fa-phone"></i> <span data-i18n="contacts.our_contacts.phone">Телефон</span>: +7 (XXX) XXX-XX-XX</li>
-                        <li><i class="fas fa-envelope"></i> <span data-i18n="contacts.our_contacts.email">Email</span>: info@dragonbiztrip.com</li>
-                        <li><i class="fas fa-map-marker-alt"></i> <span data-i18n="contacts.our_contacts.address">Адрес</span>: г. Москва, ул. Примерная, д. 123</li>
-                        <li><i class="fas fa-clock"></i> <span data-i18n="contacts.our_contacts.working_hours">Режим работы</span>: Пн-Пт: 9:00 - 18:00</li>
+                        <li data-i18n="business_tours.tours.items.0">Организация деловых поездок в Китай</li>
+                        <li data-i18n="business_tours.tours.items.1">Посещение выставок и конференций</li>
+                        <li data-i18n="business_tours.tours.items.2">Организация деловых встреч</li>
+                        <li data-i18n="business_tours.tours.items.3">Экскурсии на предприятия</li>
                     </ul>
                 </div>
 
                 <div class="service-card">
-                    <h3 data-i18n="contacts.form.title">Свяжитесь с нами</h3>
-                    <form class="contact-form">
-                        <div class="form-group">
-                            <label for="name" data-i18n="contacts.form.name">Ваше имя:</label>
-                            <input type="text" id="name" name="name" required>
-                        </div>
-                        
-                        <div class="form-group">
-                            <label for="email" data-i18n="contacts.form.email">Email:</label>
-                            <input type="email" id="email" name="email" required>
-                        </div>
-                        
-                        <div class="form-group">
-                            <label for="phone" data-i18n="contacts.form.phone">Телефон:</label>
-                            <input type="tel" id="phone" name="phone">
-                        </div>
-                        
-                        <div class="form-group">
-                            <label for="message" data-i18n="contacts.form.message">Сообщение:</label>
-                            <textarea id="message" name="message" rows="5" required></textarea>
-                        </div>
-                        
-                        <button type="submit" class="submit-btn" data-i18n="contacts.form.submit">Отправить</button>
-                    </form>
+                    <h3 data-i18n="business_tours.individual.title">Индивидуальные программы</h3>
+                    <ul class="benefits-list">
+                        <li data-i18n="business_tours.individual.items.0">Персональный гид-переводчик</li>
+                        <li data-i18n="business_tours.individual.items.1">Трансфер и транспортное обслуживание</li>
+                        <li data-i18n="business_tours.individual.items.2">Бронирование отелей бизнес-класса</li>
+                        <li data-i18n="business_tours.individual.items.3">Организация деловых ужинов</li>
+                    </ul>
                 </div>
 
                 <div class="service-card">
-                    <h3 data-i18n="contacts.social.title">Мы в социальных сетях</h3>
-                    <div class="social-links">
-                        <a href="#" class="social-link"><i class="fab fa-weixin"></i> WeChat</a>
-                        <a href="#" class="social-link"><i class="fab fa-telegram"></i> Telegram</a>
-                        <a href="#" class="social-link"><i class="fab fa-whatsapp"></i> WhatsApp</a>
-                    </div>
+                    <h3 data-i18n="business_tours.additional.title">Дополнительные услуги</h3>
+                    <ul class="benefits-list">
+                        <li data-i18n="business_tours.additional.items.0">Подготовка деловых документов</li>
+                        <li data-i18n="business_tours.additional.items.1">Поддержка 24/7</li>
+                        <li data-i18n="business_tours.additional.items.2">Бронирование авиабилетов</li>
+                        <li data-i18n="business_tours.additional.items.3">Страхование поездки</li>
+                    </ul>
+                </div>
+
+                <div class="service-card">
+                    <h3 data-i18n="business_tours.advantages.title">Преимущества работы с нами</h3>
+                    <ul class="benefits-list">
+                        <li data-i18n="business_tours.advantages.items.0">Опыт работы более 10 лет</li>
+                        <li data-i18n="business_tours.advantages.items.1">Индивидуальный подход к каждому клиенту</li>
+                        <li data-i18n="business_tours.advantages.items.2">Профессиональная команда</li>
+                        <li data-i18n="business_tours.advantages.items.3">Гарантия качества услуг</li>
+                    </ul>
                 </div>
             </div>
         </div>
     </main>
-    
+
     <footer>
         <div class="footer-container">
             <div class="footer-info">

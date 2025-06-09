@@ -4,11 +4,54 @@
   "nav": {
     "home": "Home",
     "visas": "Visas",
+    "business_tours": "Business Tours",
     "services": "Services",
-    "about": "About Us",
+    "about": "About",
     "contacts": "Contacts",
     "links": "Useful Links",
     "partners": "Partners"
+  },
+  "home": {
+    "hero": {
+      "title": "Dragon Biztrip",
+      "subtitle": "Your reliable partner in organizing business trips to China",
+      "cta": "Contact Us"
+    },
+    "services": {
+      "title": "Our Services",
+      "visas": {
+        "title": "Visa Support",
+        "text": "Processing all types of visas to China, including business visas and business trip visas"
+      },
+      "tours": {
+        "title": "Business Tours",
+        "text": "Organization of business trips, including transfer, accommodation and support"
+      },
+      "meetings": {
+        "title": "Meeting Organization",
+        "text": "Preparation and conduct of business meetings with Chinese partners"
+      },
+      "learn_more": "Learn More"
+    },
+    "advantages": {
+      "title": "Why Choose Us",
+      "experience": {
+        "title": "Experience",
+        "text": "Over 10 years of experience in organizing business trips"
+      },
+      "team": {
+        "title": "Team",
+        "text": "Professional team of specialists"
+      },
+      "support": {
+        "title": "Support",
+        "text": "24/7 customer support"
+      },
+      "quality": {
+        "title": "Quality",
+        "text": "Guarantee of service quality"
+      }
+    }
   },
   "content": {
     "welcomeTitle": "Welcome to Dragon Biztrip",
@@ -39,13 +82,360 @@
       "text": "Discover new opportunities with Dragon Biztrip. Contact us for a consultation to discuss your needs in detail."
     }
   },
+  "business_tours": {
+    "title": "Business Tours to China",
+    "tours": {
+      "title": "Business Tours to China",
+      "items": [
+        "Organization of business trips to China",
+        "Exhibition and conference visits",
+        "Business meeting organization",
+        "Factory tours"
+      ]
+    },
+    "individual": {
+      "title": "Individual Programs",
+      "items": [
+        "Personal guide-interpreter",
+        "Transfer and transportation services",
+        "Business class hotel booking",
+        "Business dinner organization"
+      ]
+    },
+    "additional": {
+      "title": "Additional Services",
+      "items": [
+        "Business document preparation",
+        "24/7 support",
+        "Flight booking",
+        "Travel insurance"
+      ]
+    },
+    "advantages": {
+      "title": "Benefits of Working with Us",
+      "items": [
+        "Over 10 years of experience",
+        "Individual approach to each client",
+        "Professional team",
+        "Service quality guarantee"
+      ]
+    }
+  },
   "footer": {
-    "contactInfo": "Contact Information",
-    "legalDetails": "Legal Details",
-    "address": "Address",
-    "workingHours": "Working Hours",
-    "weekdays": "Mon-Fri: ",
-    "weekend": "Sat-Sun: ",
-    "copyright": "All rights reserved."
+    "contacts": {
+      "title": "Contact Information",
+      "phone": "Phone",
+      "email": "Email"
+    },
+    "legal": {
+      "title": "Legal Information",
+      "inn": "TIN",
+      "ogrn": "PSRN"
+    },
+    "address": {
+      "title": "Address"
+    },
+    "working_hours": {
+      "title": "Working Hours",
+      "weekdays": "Mon-Fri",
+      "weekend": "Sat-Sun"
+    },
+    "copyright": "All rights reserved"
+  },
+  "common": {
+    "select_language": "Select Language",
+    "loading": "Loading...",
+    "error": "An error occurred",
+    "retry": "Retry",
+    "close": "Close",
+    "menu": "Menu"
+  },
+  "about": {
+    "title": "About Dragon Biztrip",
+    "mission": {
+      "title": "Our Mission",
+      "text": "Dragon Biztrip is a company specializing in organizing business trips and visa processing for Chinese businessmen. Our mission is to make the process of international business interaction as simple and efficient as possible."
+    },
+    "history": {
+      "title": "Company History",
+      "text": "Founded in 2023, Dragon Biztrip quickly gained client trust through our professional approach and deep understanding of international business specifics. We help Chinese entrepreneurs successfully develop their business in Russia, India, and European Union countries."
+    },
+    "advantages": {
+      "title": "Our Advantages",
+      "items": [
+        "Professional team with years of experience",
+        "Deep knowledge of different countries' legislation",
+        "Individual approach to each client",
+        "Full support at all stages",
+        "Multilingual support",
+        "Strict confidentiality compliance"
+      ]
+    },
+    "values": {
+      "title": "Our Values",
+      "items": [
+        "Professionalism and responsibility",
+        "Honesty and transparency",
+        "Client-oriented approach",
+        "Innovative solutions",
+        "Continuous development"
+      ]
+    }
+  },
+  "visas": {
+    "title": "Visas",
+    "subtitle": "Processing all types of visas",
+    "types": {
+      "business": {
+        "title": "Business Visa",
+        "description": "For business trips and partner meetings"
+      },
+      "tourist": {
+        "title": "Tourist Visa",
+        "description": "For tourism and leisure travel"
+      },
+      "work": {
+        "title": "Work Visa",
+        "description": "For work and long-term stay"
+      },
+      "student": {
+        "title": "Student Visa",
+        "description": "For studying at educational institutions"
+      }
+    },
+    "process": {
+      "title": "Application Process",
+      "steps": [
+        "Consultation and visa type selection",
+        "Document preparation",
+        "Application submission",
+        "Visa issuance"
+      ]
+    },
+    "requirements": {
+      "title": "Required Documents",
+      "list": [
+        "Passport",
+        "Photos",
+        "Application form",
+        "Invitation letter",
+        "Additional documents depending on visa type"
+      ]
+    }
+  },
+  "services": {
+    "title": "Our Services",
+    "subtitle": "Our Professional Services",
+    "list": {
+      "visa_support": {
+        "title": "Visa Support",
+        "description": "Comprehensive visa application support:",
+        "items": [
+          "Visa type consultation",
+          "Document preparation",
+          "Form filling assistance",
+          "Consulate accompaniment",
+          "Document translation"
+        ]
+      },
+      "business_trips": {
+        "title": "Business Trip Organization",
+        "description": "Complete business trip support:",
+        "items": [
+          "Hotel booking",
+          "Partner meeting organization",
+          "Transfer and transportation",
+          "Interpreter services",
+          "24/7 support"
+        ]
+      },
+      "consulting": {
+        "title": "Business Consulting",
+        "description": "Professional business consulting services:",
+        "items": [
+          "Market analysis",
+          "Partner search",
+          "Legal support",
+          "Tax consulting",
+          "Business setup assistance"
+        ]
+      },
+      "additional": {
+        "title": "Additional Services",
+        "description": "Additional services for comfortable business operations:",
+        "items": [
+          "Document apostille",
+          "Document legalization",
+          "Notarized translation",
+          "Insurance",
+          "Flight booking"
+        ]
+      }
+    }
+  },
+  "contacts": {
+    "title": "Dragon Biztrip - Contacts",
+    "main_title": "Contact Information",
+    "our_contacts": {
+      "title": "Our Contacts",
+      "phone": "Phone",
+      "email": "Email",
+      "address": "Address",
+      "working_hours": "Working Hours"
+    },
+    "form": {
+      "title": "Contact Us",
+      "name": "Your Name:",
+      "email": "Email:",
+      "phone": "Phone:",
+      "message": "Message:",
+      "submit": "Send"
+    },
+    "social": {
+      "title": "Follow Us on Social Media"
+    }
+  },
+  "links": {
+    "title": "Useful Links",
+    "subtitle": "Resources for Your Business",
+    "categories": {
+      "government": {
+        "title": "Government Resources",
+        "description": "Official websites and documents"
+      },
+      "business": {
+        "title": "Business Resources",
+        "description": "Useful business materials"
+      },
+      "travel": {
+        "title": "Travel",
+        "description": "Travel information"
+      }
+    },
+    "official": {
+      "title": "Official Resources",
+      "items": {
+        "russia": "Ministry of Foreign Affairs of Russia",
+        "china": "Ministry of Foreign Affairs of China",
+        "india": "Ministry of External Affairs of India",
+        "romania": "Ministry of Foreign Affairs of Romania"
+      }
+    },
+    "visa": {
+      "title": "Visa Centers",
+      "items": {
+        "russia": "Russian Visa Center in China",
+        "india": "Indian Visa Center in China",
+        "romania": "Romanian Visa Center in China"
+      }
+    },
+    "travel": {
+      "title": "Travel Resources",
+      "items": {
+        "tripadvisor": "TripAdvisor - Travel Reviews and Tips",
+        "booking": "Booking.com - Hotel Reservations",
+        "skyscanner": "Skyscanner - Flight Search"
+      }
+    },
+    "business": {
+      "title": "Business Resources",
+      "items": {
+        "worldbank": "World Bank - Economic Information",
+        "wto": "WTO - International Trade Information",
+        "chamber": "Chambers of Commerce"
+      }
+    }
+  },
+  "partners": {
+    "title": "Our Partners",
+    "visa": {
+      "title": "Visa Centers",
+      "items": {
+        "vfs": "VFS Global - International Visa Center",
+        "pony": "Pony Express - Courier Service",
+        "centers": "Visa Centers of Russia, India, and Romania"
+      }
+    },
+    "transport": {
+      "title": "Transport Companies",
+      "items": {
+        "airlines": "Airlines of Russia and China",
+        "international": "International Transport Companies",
+        "local": "Local Transport Services"
+      }
+    },
+    "hotels": {
+      "title": "Hotels and Accommodations",
+      "items": {
+        "chains": "International Hotel Chains",
+        "business": "Business Hotels in Russia, India, and Romania",
+        "apartments": "Long-term Stay Apartments"
+      }
+    },
+    "business": {
+      "title": "Business Partners",
+      "items": {
+        "chambers": "Chambers of Commerce of Russia, China, India, and Romania",
+        "associations": "Business Associations",
+        "consulting": "Consulting Companies",
+        "legal": "Law Firms"
+      }
+    },
+    "join": {
+      "title": "Become Our Partner",
+      "description": "We are always open to new partnerships. If you are interested in cooperation, please contact us through the feedback form on the contacts page.",
+      "button": "Contact Us"
+    }
+  },
+  "main": {
+    "title": "Dragon Biztrip - Visa Services",
+    "welcome": {
+      "title": "Welcome to Dragon Biztrip",
+      "description": "Your reliable partner in business travel organization and visa processing! We specialize in helping Chinese businessmen expand their horizons in Russia, India, and Romania. Dragon Biztrip offers professional and affordable services for business travel organization and visa processing for Russia, India, Vietnam, and Schengen visas."
+    },
+    "why_us": {
+      "title": "Why Choose Us?",
+      "benefits": {
+        "legality": {
+          "title": "Legality and Reliability:",
+          "description": "We comply with all legal requirements and provide guarantees for our services."
+        },
+        "opportunities": {
+          "title": "Wide Range of Opportunities:",
+          "description": "We help not only with visas but also with company formation in Russia, India, Romania, and EU countries."
+        },
+        "experience": {
+          "title": "Extensive Experience:",
+          "description": "Our team has significant experience in business travel and visa processing."
+        },
+        "personal": {
+          "title": "Personal Approach:",
+          "description": "Individual solutions for each client."
+        },
+        "comprehensive": {
+          "title": "Comprehensive Services:",
+          "description": "From visa support to full trip organization."
+        }
+      }
+    },
+    "services": {
+      "title": "Our Services",
+      "visas": {
+        "title": "Visa Processing",
+        "description": "We understand that the visa application process can be complex. Our experience and deep knowledge of legislation will help you quickly and cost-effectively obtain visas for Russia, India, or Vietnam. We guarantee compliance with all legal requirements, providing support at every stage."
+      },
+      "trips": {
+        "title": "Business Trips",
+        "description": "We organize business trips according to your preferences. With extensive contacts in the mentioned countries, we help establish necessary connections. Without language barriers and with attention to detail, your trip will be maximally productive."
+      },
+      "consulting": {
+        "title": "Business Consulting",
+        "description": "We help you understand the specifics of doing business in new countries and suggest optimal solutions for your business."
+      }
+    },
+    "cta": {
+      "title": "Join Our Satisfied Clients",
+      "description": "Discover new opportunities with Dragon Biztrip. Contact us for a consultation and discuss your needs in detail."
+    }
   }
 }

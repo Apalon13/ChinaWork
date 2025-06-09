@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dragon Biztrip - Оформление виз</title>
+    <title data-i18n="main.title">Dragon Biztrip - Оформление виз</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <script src="buttonLanguage.js" defer></script>
@@ -19,39 +19,40 @@
                 </button>
                 <div class="logo">Dragon Biztrip</div>
                 <div class="language-switcher">
-                    <button class="language-btn" id="languageButton">
+                    <button class="language-btn" id="languageBtn">
                         <i class="fas fa-globe"></i>
-                        <span class="language-text">Русский</span>
-                        <i class="fas fa-caret-down"></i>
+                        <span>RU</span>
                     </button>
                     <div class="language-dropdown" id="languageDropdown">
-                        <a href="#" data-lang="en"><i class="fas fa-language"></i> English</a>
-                        <a href="#" data-lang="zh"><i class="fas fa-language"></i> 中文</a>
-                        <a href="#" data-lang="ru"><i class="fas fa-language"></i> Русский</a>
+                        <button class="lang-option" data-lang="ru">RU</button>
+                        <button class="lang-option" data-lang="en">EN</button>
+                        <button class="lang-option" data-lang="zh">中文</button>
                     </div>
                 </div>
             </div>
             <nav>
                 <ul>
-                    <li><a href="index.html" class="active">Главная</a></li>
-                    <li><a href="pages/visas.html">Визы</a></li>
-                    <li><a href="pages/services.html">Услуги</a></li>
-                    <li><a href="pages/about.html">О компании</a></li>
-                    <li><a href="pages/contacts.html">Контакты</a></li>
-                    <li><a href="pages/links.html">Полезные ссылки</a></li>
-                    <li><a href="pages/partners.html">Партнеры</a></li>
+                    <li><a href="index.html" class="active" data-i18n="nav.home">Главная</a></li>
+                    <li><a href="pages/visas.html" data-i18n="nav.visas">Визы</a></li>
+                    <li><a href="pages/business-tours.html" data-i18n="nav.business_tours">Деловые туры</a></li>
+                    <li><a href="pages/services.html" data-i18n="nav.services">Услуги</a></li>
+                    <li><a href="pages/about.html" data-i18n="nav.about">О компании</a></li>
+                    <li><a href="pages/contacts.html" data-i18n="nav.contacts">Контакты</a></li>
+                    <li><a href="pages/links.html" data-i18n="nav.links">Полезные ссылки</a></li>
+                    <li><a href="pages/partners.html" data-i18n="nav.partners">Партнеры</a></li>
                 </ul>
             </nav>
             <div class="mobile-menu" id="mobileMenu">
                 <nav>
                     <ul>
-                        <li><a href="index.html">Главная</a></li>
-                        <li><a href="pages/visas.html">Визы</a></li>
-                        <li><a href="pages/services.html">Услуги</a></li>
-                        <li><a href="pages/about.html">О компании</a></li>
-                        <li><a href="pages/contacts.html">Контакты</a></li>
-                        <li><a href="pages/links.html">Полезные ссылки</a></li>
-                        <li><a href="pages/partners.html">Партнеры</a></li>
+                        <li><a href="index.html" data-i18n="nav.home">Главная</a></li>
+                        <li><a href="pages/visas.html" data-i18n="nav.visas">Визы</a></li>
+                        <li><a href="pages/business-tours.html" data-i18n="nav.business_tours">Деловые туры</a></li>
+                        <li><a href="pages/services.html" data-i18n="nav.services">Услуги</a></li>
+                        <li><a href="pages/about.html" data-i18n="nav.about">О компании</a></li>
+                        <li><a href="pages/contacts.html" data-i18n="nav.contacts">Контакты</a></li>
+                        <li><a href="pages/links.html" data-i18n="nav.links">Полезные ссылки</a></li>
+                        <li><a href="pages/partners.html" data-i18n="nav.partners">Партнеры</a></li>
                     </ul>
                 </nav>
             </div>
@@ -67,9 +68,9 @@
                 <img src="images/side-image.jpg" alt="Приветствие" class="content-image">
             </div>
             <div class="text-column">
-                <h2 class="section-title">Добро пожаловать в Dragon Biztrip</h2>
+                <h2 class="section-title" data-i18n="main.welcome.title">Добро пожаловать в Dragon Biztrip</h2>
                 <div class="service-card">
-                    <p>Ваш надежный партнер в организации деловых поездок и оформлении виз! Мы специализируемся на помощи бизнесменам из Китая, стремящимся расширить свои горизонты в России, Индии и Румынии. Компания Dragon Biztrip предлагает профессиональные и доступные услуги по организации деловых поездок, а также оформлению виз в Россию, Индию, Вьетнам и шенгенских виз.</p>
+                    <p data-i18n="main.welcome.description">Ваш надежный партнер в организации деловых поездок и оформлении виз! Мы специализируемся на помощи бизнесменам из Китая, стремящимся расширить свои горизонты в России, Индии и Румынии. Компания Dragon Biztrip предлагает профессиональные и доступные услуги по организации деловых поездок, а также оформлению виз в Россию, Индию, Вьетнам и шенгенских виз.</p>
                 </div>
             </div>
         </div>
@@ -80,13 +81,13 @@
                 <img src="images/side-image.jpg" alt="Почему выбирают нас" class="content-image">
             </div>
             <div class="text-column">
-                <h2 class="section-title">Почему выбирают именно нас?</h2>
+                <h2 class="section-title" data-i18n="main.why_us.title">Почему выбирают именно нас?</h2>
                 <ul class="benefits-list">
-                    <li><strong>Законность и надежность:</strong> Мы соблюдаем все юридические нормы и предоставляем гарантии на наши услуги.</li>
-                    <li><strong>Широкие возможности:</strong> Помогаем не только с визами, но и с созданием компании в России, Индии, Румынии и странах ЕС.</li>
-                    <li><strong>Большой опыт:</strong> Наша команда имеет значительный опыт в сфере бизнес-поездок и визового оформления.</li>
-                    <li><strong>Персональный подход:</strong> Индивидуальные решения для каждого клиента.</li>
-                    <li><strong>Комплексные услуги:</strong> От визовой поддержки до организации всей поездки.</li>
+                    <li><strong data-i18n="main.why_us.benefits.legality.title">Законность и надежность:</strong> <span data-i18n="main.why_us.benefits.legality.description">Мы соблюдаем все юридические нормы и предоставляем гарантии на наши услуги.</span></li>
+                    <li><strong data-i18n="main.why_us.benefits.opportunities.title">Широкие возможности:</strong> <span data-i18n="main.why_us.benefits.opportunities.description">Помогаем не только с визами, но и с созданием компании в России, Индии, Румынии и странах ЕС.</span></li>
+                    <li><strong data-i18n="main.why_us.benefits.experience.title">Большой опыт:</strong> <span data-i18n="main.why_us.benefits.experience.description">Наша команда имеет значительный опыт в сфере бизнес-поездок и визового оформления.</span></li>
+                    <li><strong data-i18n="main.why_us.benefits.personal.title">Персональный подход:</strong> <span data-i18n="main.why_us.benefits.personal.description">Индивидуальные решения для каждого клиента.</span></li>
+                    <li><strong data-i18n="main.why_us.benefits.comprehensive.title">Комплексные услуги:</strong> <span data-i18n="main.why_us.benefits.comprehensive.description">От визовой поддержки до организации всей поездки.</span></li>
                 </ul>
             </div>
         </div>
@@ -97,21 +98,21 @@
                 <img src="images/side-image.jpg" alt="Наши услуги" class="content-image">
             </div>
             <div class="text-column">
-                <h2 class="section-title">Наши услуги</h2>
+                <h2 class="section-title" data-i18n="main.services.title">Наши услуги</h2>
                 
                 <div class="service-card">
-                    <h3>Оформление виз</h3>
-                    <p>Мы знаем, что процесс получения визы может быть сложным. Наш опыт и глубокие знания законодательства помогут вам быстро и без лишних затрат оформить визу в Россию, Индию или Вьетнам. Мы гарантируем соответствие всем правовым нормам, предоставляя поддержку на каждом этапе.</p>
+                    <h3 data-i18n="main.services.visas.title">Оформление виз</h3>
+                    <p data-i18n="main.services.visas.description">Мы знаем, что процесс получения визы может быть сложным. Наш опыт и глубокие знания законодательства помогут вам быстро и без лишних затрат оформить визу в Россию, Индию или Вьетнам. Мы гарантируем соответствие всем правовым нормам, предоставляя поддержку на каждом этапе.</p>
                 </div>
                 
                 <div class="service-card">
-                    <h3>Деловые поездки</h3>
-                    <p>Мы организуем деловые поездки, учитывая все ваши пожелания. Обладая обширными контактами в указанных странах, мы поможем наладить необходимые связи. Без языкового барьера и с вниманием к деталям, ваша поездка будет максимально продуктивной.</p>
+                    <h3 data-i18n="main.services.trips.title">Деловые поездки</h3>
+                    <p data-i18n="main.services.trips.description">Мы организуем деловые поездки, учитывая все ваши пожелания. Обладая обширными контактами в указанных странах, мы поможем наладить необходимые связи. Без языкового барьера и с вниманием к деталям, ваша поездка будет максимально продуктивной.</p>
                 </div>
                 
                 <div class="service-card">
-                    <h3>Бизнес-консультации</h3>
-                    <p>Поможем разобраться в особенностях ведения бизнеса в новых для вас странах, подскажем оптимальные решения для вашего бизнеса.</p>
+                    <h3 data-i18n="main.services.consulting.title">Бизнес-консультации</h3>
+                    <p data-i18n="main.services.consulting.description">Поможем разобраться в особенностях ведения бизнеса в новых для вас странах, подскажем оптимальные решения для вашего бизнеса.</p>
                 </div>
             </div>
         </div>
@@ -123,78 +124,44 @@
             </div>
             <div class="text-column">
                 <div class="highlight-text">
-                    <h3>Присоединяйтесь к числу наших довольных клиентов</h3>
-                    <p>Откройте для себя новые возможности с Dragon Biztrip. Свяжитесь с нами для получения консультации и подробнее обсудите ваши потребности.</p>
+                    <h3 data-i18n="main.cta.title">Присоединяйтесь к числу наших довольных клиентов</h3>
+                    <p data-i18n="main.cta.description">Откройте для себя новые возможности с Dragon Biztrip. Свяжитесь с нами для получения консультации и подробнее обсудите ваши потребности.</p>
                 </div>
             </div>
         </div>
     </main>
-    
+
     <footer>
         <div class="footer-container">
             <div class="footer-info">
                 <div>
-                    <h4>Контактная информация</h4>
-                    <p>Телефон: </p>
-                    <p>Email: </p>
+                    <h4 data-i18n="footer.contacts.title">Контактная информация</h4>
+                    <p><i class="fas fa-phone"></i> <span data-i18n="footer.contacts.phone">Телефон</span>: +7 (999) 123-45-67</p>
+                    <p><i class="fas fa-envelope"></i> <span data-i18n="footer.contacts.email">Email</span>: info@dragonbiztrip.com</p>
                 </div>
                 
                 <div>
-                    <h4>Юридические данные</h4>
-                    <p>ИНН: </p>
-                    <p>ОГРН: </p>
+                    <h4 data-i18n="footer.legal.title">Юридические данные</h4>
+                    <p><span data-i18n="footer.legal.inn">ИНН</span>: 1234567890</p>
+                    <p><span data-i18n="footer.legal.ogrn">ОГРН</span>: 1234567890123</p>
                 </div>
                 
                 <div>
-                    <h4>Адрес</h4>
-                    <p></p>
+                    <h4 data-i18n="footer.address.title">Адрес</h4>
+                    <p>г. Москва, ул. Примерная, д. 123</p>
                 </div>
                 
                 <div>
-                    <h4>Режим работы</h4>
-                    <p>Пн-Пт: </p>
-                    <p>Сб-Вс: </p>
+                    <h4 data-i18n="footer.working_hours.title">Режим работы</h4>
+                    <p><span data-i18n="footer.working_hours.weekdays">Пн-Пт</span>: 9:00 - 18:00</p>
+                    <p><span data-i18n="footer.working_hours.weekend">Сб-Вс</span>: выходной</p>
                 </div>
             </div>
             
             <div class="copyright">
-                &copy; 2023 Dragon Biztrip. Все права защищены.
+                <p>&copy; 2024 Dragon Biztrip. <span data-i18n="footer.copyright">Все права защищены</span></p>
             </div>
         </div>
     </footer>
-
-    <script>
-        // Обработка переключения языка
-        document.addEventListener('DOMContentLoaded', function() {
-            const languageBtn = document.querySelector('.language-btn');
-            const languageDropdown = document.querySelector('.language-dropdown');
-            const burgerMenu = document.getElementById('burgerMenu');
-            const mobileMenu = document.getElementById('mobileMenu');
-            
-            languageBtn.addEventListener('click', function(e) {
-                e.stopPropagation();
-                languageDropdown.style.display = languageDropdown.style.display === 'block' ? 'none' : 'block';
-            });
-            
-            document.addEventListener('click', function() {
-                languageDropdown.style.display = 'none';
-            });
-
-            // Обработка бургер меню
-            burgerMenu.addEventListener('click', function() {
-                mobileMenu.classList.toggle('active');
-                document.body.style.overflow = mobileMenu.classList.contains('active') ? 'hidden' : '';
-            });
-
-            // Закрытие меню при клике на ссылку
-            const mobileLinks = mobileMenu.querySelectorAll('a');
-            mobileLinks.forEach(link => {
-                link.addEventListener('click', () => {
-                    mobileMenu.classList.remove('active');
-                    document.body.style.overflow = '';
-                });
-            });
-        });
-    </script>
 </body>
 </html>

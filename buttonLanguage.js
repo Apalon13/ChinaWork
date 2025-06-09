@@ -1,130 +1,120 @@
-document.addEventListener('DOMContentLoaded', function() {
-    // Элементы интерфейса
-    const languageButton = document.getElementById('languageButton');
+// Ждем полной загрузки DOM
+document.addEventListener('DOMContentLoaded', () => {
+    const languageBtn = document.getElementById('languageBtn');
     const languageDropdown = document.getElementById('languageDropdown');
-    const languageLinks = document.querySelectorAll('.language-dropdown a');
-    const languageText = document.querySelector('.language-text');
-
-    // Текущий язык (по умолчанию русский)
-    let currentLanguage = localStorage.getItem('preferredLanguage') || 'ru';
-
-    // Инициализация языка
-    updateLanguage(currentLanguage);
-
-    // Обработчик клика по кнопке
-    languageButton.addEventListener('click', function(e) {
-        e.stopPropagation();
-        languageDropdown.classList.toggle('show');
-    });
-
-    // Закрытие при клике вне меню
-    document.addEventListener('click', function() {
-        languageDropdown.classList.remove('show');
-    });
-
-    // Обработчики выбора языка
-    languageLinks.forEach(link => {
-        link.addEventListener('click', function(e) {
-            e.preventDefault();
-            const selectedLang = this.getAttribute('data-lang');
-            if (currentLanguage !== selectedLang) {
-                currentLanguage = selectedLang;
-                localStorage.setItem('preferredLanguage', selectedLang);
-                updateLanguage(selectedLang);
-            }
-            languageDropdown.classList.remove('show');
-        });
-    });
-
-    // Функция обновления языка
-    function updateLanguage(lang) {
-        // Обновляем текст кнопки
-        const languageNames = {
-            'en': 'English',
-            'zh': '中文',
-            'ru': 'Русский'
-        };
-        languageText.textContent = languageNames[lang] || 'English';
-
-        // Загружаем переводы
-        loadTranslations(lang);
-    }
-
-    // Загрузка переводов
+    const currentLang = document.querySelector('.language-btn span');
+    
+    // Загружаем переводы
+    let translations = {};
+    
     async function loadTranslations(lang) {
         try {
-            const response = await fetch(`locales/${lang}.json`);
-            if (!response.ok) throw new Error('Language file not found');
-            
-            const translations = await response.json();
-            applyTranslations(translations);
-        } catch (error) {
-            console.error('Error loading language:', error);
-            if (lang !== 'ru') {
-                currentLanguage = 'ru';
-                localStorage.setItem('preferredLanguage', 'ru');
-                updateLanguage('ru');
+            // Определяем правильный путь к файлам локализации
+            const path = window.location.pathname.includes('/pages/') ? '../locales/' : 'locales/';
+            const response = await fetch(`${path}${lang}.json`);
+            if (!response.ok) {
+                throw new Error(`Failed to load ${lang} translations`);
             }
+            translations[lang] = await response.json();
+            console.log(`Loaded ${lang} translations:`, translations[lang]);
+        } catch (error) {
+            console.error(`Error loading ${lang} translations:`, error);
         }
     }
-
-    // Применение переводов
-    function applyTranslations(translations) {
-        // Title и логотип
-        document.title = `${translations.companyName} - ${translations.pageTitle}`;
-        document.querySelector('.logo').textContent = translations.companyName;
+    
+    // Загружаем все переводы при старте
+    ['ru', 'en', 'zh'].forEach(lang => loadTranslations(lang));
+    
+    // Функция для перевода текста
+    function translateText(element, key) {
+        if (!key) return element.textContent;
         
-        // Навигация
-        const navLinks = document.querySelectorAll('nav a');
-        navLinks[0].textContent = translations.nav.home;
-        navLinks[1].textContent = translations.nav.visas;
-        navLinks[2].textContent = translations.nav.services;
-        navLinks[3].textContent = translations.nav.about;
-        navLinks[4].textContent = translations.nav.contacts;
-        navLinks[5].textContent = translations.nav.links;
-        navLinks[6].textContent = translations.nav.partners;
+        const keys = key.split('.');
+        let value = translations[currentLang.textContent.toLowerCase()];
         
-        // Основной контент
-        const sectionTitles = document.querySelectorAll('.section-title');
-        sectionTitles[0].textContent = translations.content.welcomeTitle;
-        sectionTitles[1].textContent = translations.content.whyChooseUs;
-        sectionTitles[2].textContent = translations.content.ourServices;
+        if (!value) {
+            console.warn(`No translations found for ${currentLang.textContent.toLowerCase()}`);
+            return element.textContent;
+        }
         
-        // Текст приветствия
-        document.querySelector('.content-row:first-child .service-card p').textContent = translations.content.welcomeText;
+        for (const k of keys) {
+            if (value && value[k]) {
+                value = value[k];
+            } else {
+                console.warn(`Translation key not found: ${key}`);
+                return element.textContent;
+            }
+        }
         
-        // Преимущества
-        const benefitsItems = document.querySelectorAll('.benefits-list li');
-        translations.content.benefits.forEach((item, index) => {
-            if (benefitsItems[index]) benefitsItems[index].innerHTML = item;
+        return value;
+    }
+    
+    // Обновляем все переводимые элементы
+    function updateContent() {
+        document.querySelectorAll('[data-i18n]').forEach(element => {
+            const key = element.getAttribute('data-i18n');
+            const translatedText = translateText(element, key);
+            if (translatedText) {
+                element.textContent = translatedText;
+            }
         });
-        
-        // Услуги
-        const serviceCards = document.querySelectorAll('.service-card');
-        serviceCards[1].querySelector('h3').textContent = translations.content.visaProcessing.title;
-        serviceCards[1].querySelector('p').textContent = translations.content.visaProcessing.description;
-        serviceCards[2].querySelector('h3').textContent = translations.content.businessTrips.title;
-        serviceCards[2].querySelector('p').textContent = translations.content.businessTrips.description;
-        serviceCards[3].querySelector('h3').textContent = translations.content.businessConsultations.title;
-        serviceCards[3].querySelector('p').textContent = translations.content.businessConsultations.description;
-        
-        // Призыв к действию
-        const highlightText = document.querySelector('.highlight-text');
-        highlightText.querySelector('h3').textContent = translations.content.cta.title;
-        highlightText.querySelector('p').textContent = translations.content.cta.text;
-        
-        // Футер
-        const footerTitles = document.querySelectorAll('.footer-info h4');
-        footerTitles[0].textContent = translations.footer.contactInfo;
-        footerTitles[1].textContent = translations.footer.legalDetails;
-        footerTitles[2].textContent = translations.footer.address;
-        footerTitles[3].textContent = translations.footer.workingHours;
-        
-        const footerTexts = document.querySelectorAll('.footer-info p');
-        footerTexts[3].textContent = translations.footer.weekdays;
-        footerTexts[4].textContent = translations.footer.weekend;
-        
-        document.querySelector('.copyright').innerHTML = 
-            `&copy; ${new Date().getFullYear()} ${translations.companyName}. ${translations.footer.copyright}`;
+    }
+    
+    // Обработчик клика по кнопке языка
+    if (languageBtn) {
+        languageBtn.addEventListener('click', (e) => {
+            e.stopPropagation();
+            if (languageDropdown) {
+                languageDropdown.classList.toggle('show');
+            }
+        });
+    }
+    
+    // Обработчик выбора языка
+    document.querySelectorAll('.lang-option').forEach(option => {
+        option.addEventListener('click', async () => {
+            const lang = option.getAttribute('data-lang');
+            if (currentLang) {
+                currentLang.textContent = lang.toUpperCase();
+            }
+            if (languageDropdown) {
+                languageDropdown.classList.remove('show');
+            }
+            
+            // Убедимся, что переводы загружены перед обновлением контента
+            if (!translations[lang]) {
+                loadTranslations(lang).then(() => {
+                    updateContent();
+                });
+            } else {
+                updateContent();
+            }
+            
+            // Сохраняем выбранный язык
+            localStorage.setItem('selectedLanguage', lang);
+        });
+    });
+    
+    // Закрываем дропдаун при клике вне его
+    document.addEventListener('click', (e) => {
+        if (languageBtn && languageDropdown && 
+            !languageBtn.contains(e.target) && 
+            !languageDropdown.contains(e.target)) {
+            languageDropdown.classList.remove('show');
+        }
+    });
+    
+    // Восстанавливаем сохраненный язык
+    const savedLang = localStorage.getItem('selectedLanguage');
+    if (savedLang && currentLang) {
+        currentLang.textContent = savedLang.toUpperCase();
+        // Убедимся, что переводы загружены перед обновлением контента
+        if (!translations[savedLang]) {
+            loadTranslations(savedLang).then(() => {
+                updateContent();
+            });
+        } else {
+            updateContent();
+        }
     }
 });

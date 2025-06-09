@@ -6,7 +6,7 @@
     <title>Dragon Biztrip - Визы</title>
     <link rel="stylesheet" href="../styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-    <script src="../buttonLanguage.js"></script>
+    <script src="../buttonLanguage.js" defer></script>
 </head>
 <body>
     <header>
@@ -19,39 +19,40 @@
                 </button>
                 <div class="logo">Dragon Biztrip</div>
                 <div class="language-switcher">
-                    <button class="language-btn" id="languageButton">
+                    <button class="language-btn" id="languageBtn">
                         <i class="fas fa-globe"></i>
-                        <span class="language-text">Русский</span>
-                        <i class="fas fa-caret-down"></i>
+                        <span>RU</span>
                     </button>
                     <div class="language-dropdown" id="languageDropdown">
-                        <a href="#" data-lang="en"><i class="fas fa-language"></i> English</a>
-                        <a href="#" data-lang="zh"><i class="fas fa-language"></i> 中文</a>
-                        <a href="#" data-lang="ru"><i class="fas fa-language"></i> Русский</a>
+                        <button class="lang-option" data-lang="ru">RU</button>
+                        <button class="lang-option" data-lang="en">EN</button>
+                        <button class="lang-option" data-lang="zh">中文</button>
                     </div>
                 </div>
             </div>
             <nav>
                 <ul>
-                    <li><a href="../index.html">Главная</a></li>
-                    <li><a href="visas.html" class="active">Визы</a></li>
-                    <li><a href="services.html">Услуги</a></li>
-                    <li><a href="about.html">О компании</a></li>
-                    <li><a href="contacts.html">Контакты</a></li>
-                    <li><a href="links.html">Полезные ссылки</a></li>
-                    <li><a href="partners.html">Партнеры</a></li>
+                    <li><a href="../index.html" data-i18n="nav.home">Главная</a></li>
+                    <li><a href="visas.html" class="active" data-i18n="nav.visas">Визы</a></li>
+                    <li><a href="business-tours.html" data-i18n="nav.business_tours">Деловые туры</a></li>
+                    <li><a href="services.html" data-i18n="nav.services">Услуги</a></li>
+                    <li><a href="about.html" data-i18n="nav.about">О компании</a></li>
+                    <li><a href="contacts.html" data-i18n="nav.contacts">Контакты</a></li>
+                    <li><a href="links.html" data-i18n="nav.links">Полезные ссылки</a></li>
+                    <li><a href="partners.html" data-i18n="nav.partners">Партнеры</a></li>
                 </ul>
             </nav>
             <div class="mobile-menu" id="mobileMenu">
                 <nav>
                     <ul>
-                        <li><a href="../index.html">Главная</a></li>
-                        <li><a href="visas.html">Визы</a></li>
-                        <li><a href="services.html">Услуги</a></li>
-                        <li><a href="about.html">О компании</a></li>
-                        <li><a href="contacts.html">Контакты</a></li>
-                        <li><a href="links.html">Полезные ссылки</a></li>
-                        <li><a href="partners.html">Партнеры</a></li>
+                        <li><a href="../index.html" data-i18n="nav.home">Главная</a></li>
+                        <li><a href="visas.html" data-i18n="nav.visas">Визы</a></li>
+                        <li><a href="business-tours.html" data-i18n="nav.business_tours">Деловые туры</a></li>
+                        <li><a href="services.html" data-i18n="nav.services">Услуги</a></li>
+                        <li><a href="about.html" data-i18n="nav.about">О компании</a></li>
+                        <li><a href="contacts.html" data-i18n="nav.contacts">Контакты</a></li>
+                        <li><a href="links.html" data-i18n="nav.links">Полезные ссылки</a></li>
+                        <li><a href="partners.html" data-i18n="nav.partners">Партнеры</a></li>
                     </ul>
                 </nav>
             </div>
@@ -61,31 +62,31 @@
     <main class="main-container">
         <div class="content-row">
             <div class="text-column">
-                <h2 class="section-title">Визовые услуги</h2>
+                <h2 class="section-title" data-i18n="visas.title">Визовые услуги</h2>
                 <div class="service-card">
-                    <h3>Виза в Россию</h3>
-                    <p>Мы помогаем в оформлении различных типов виз в Россию:</p>
+                    <h3 data-i18n="visas.types.business.title">Виза в Россию</h3>
+                    <p data-i18n="visas.types.business.description">Мы помогаем в оформлении различных типов виз в Россию:</p>
                     <ul class="benefits-list">
-                        <li>Деловая виза</li>
-                        <li>Туристическая виза</li>
-                        <li>Рабочая виза</li>
-                        <li>Учебная виза</li>
+                        <li data-i18n="visas.types.business.title">Деловая виза</li>
+                        <li data-i18n="visas.types.tourist.title">Туристическая виза</li>
+                        <li data-i18n="visas.types.work.title">Рабочая виза</li>
+                        <li data-i18n="visas.types.student.title">Учебная виза</li>
                     </ul>
                 </div>
                 
                 <div class="service-card">
-                    <h3>Виза в Индию</h3>
-                    <p>Оформление виз в Индию для различных целей:</p>
+                    <h3 data-i18n="visas.types.business.title">Виза в Индию</h3>
+                    <p data-i18n="visas.types.business.description">Оформление виз в Индию для различных целей:</p>
                     <ul class="benefits-list">
-                        <li>Бизнес-виза</li>
-                        <li>Туристическая виза</li>
-                        <li>Медицинская виза</li>
+                        <li data-i18n="visas.types.business.title">Бизнес-виза</li>
+                        <li data-i18n="visas.types.tourist.title">Туристическая виза</li>
+                        <li data-i18n="visas.types.work.title">Медицинская виза</li>
                     </ul>
                 </div>
 
                 <div class="service-card">
-                    <h3>Шенгенская виза</h3>
-                    <p>Помощь в получении шенгенской визы для поездок в страны Европейского Союза.</p>
+                    <h3 data-i18n="visas.types.business.title">Шенгенская виза</h3>
+                    <p data-i18n="visas.types.business.description">Помощь в получении шенгенской визы для поездок в страны Европейского Союза.</p>
                 </div>
             </div>
         </div>
@@ -95,64 +96,33 @@
         <div class="footer-container">
             <div class="footer-info">
                 <div>
-                    <h4>Контактная информация</h4>
-                    <p>Телефон: </p>
-                    <p>Email: </p>
+                    <h4 data-i18n="footer.contacts.title">Контактная информация</h4>
+                    <p><i class="fas fa-phone"></i> <span data-i18n="footer.contacts.phone">Телефон</span>: +7 (999) 123-45-67</p>
+                    <p><i class="fas fa-envelope"></i> <span data-i18n="footer.contacts.email">Email</span>: info@dragonbiztrip.com</p>
                 </div>
                 
                 <div>
-                    <h4>Юридические данные</h4>
-                    <p>ИНН: </p>
-                    <p>ОГРН: </p>
+                    <h4 data-i18n="footer.legal.title">Юридические данные</h4>
+                    <p><span data-i18n="footer.legal.inn">ИНН</span>: 1234567890</p>
+                    <p><span data-i18n="footer.legal.ogrn">ОГРН</span>: 1234567890123</p>
                 </div>
                 
                 <div>
-                    <h4>Адрес</h4>
-                    <p></p>
+                    <h4 data-i18n="footer.address.title">Адрес</h4>
+                    <p>г. Москва, ул. Примерная, д. 123</p>
                 </div>
                 
                 <div>
-                    <h4>Режим работы</h4>
-                    <p>Пн-Пт: </p>
-                    <p>Сб-Вс: </p>
+                    <h4 data-i18n="footer.working_hours.title">Режим работы</h4>
+                    <p><span data-i18n="footer.working_hours.weekdays">Пн-Пт</span>: 9:00 - 18:00</p>
+                    <p><span data-i18n="footer.working_hours.weekend">Сб-Вс</span>: выходной</p>
                 </div>
             </div>
             
             <div class="copyright">
-                &copy; 2023 Dragon Biztrip. Все права защищены.
+                <p>&copy; 2024 Dragon Biztrip. <span data-i18n="footer.copyright">Все права защищены</span></p>
             </div>
         </div>
     </footer>
-
-    <script>
-        document.addEventListener('DOMContentLoaded', function() {
-            const languageBtn = document.querySelector('.language-btn');
-            const languageDropdown = document.querySelector('.language-dropdown');
-            const burgerMenu = document.getElementById('burgerMenu');
-            const mobileMenu = document.getElementById('mobileMenu');
-            
-            languageBtn.addEventListener('click', function(e) {
-                e.stopPropagation();
-                languageDropdown.style.display = languageDropdown.style.display === 'block' ? 'none' : 'block';
-            });
-            
-            document.addEventListener('click', function() {
-                languageDropdown.style.display = 'none';
-            });
-
-            burgerMenu.addEventListener('click', function() {
-                mobileMenu.classList.toggle('active');
-                document.body.style.overflow = mobileMenu.classList.contains('active') ? 'hidden' : '';
-            });
-
-            const mobileLinks = mobileMenu.querySelectorAll('a');
-            mobileLinks.forEach(link => {
-                link.addEventListener('click', () => {
-                    mobileMenu.classList.remove('active');
-                    document.body.style.overflow = '';
-                });
-            });
-        });
-    </script>
 </body>
 </html> 
