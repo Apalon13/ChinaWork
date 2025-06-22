@@ -4,10 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title data-i18n="main.title">Dragon Biztrip - Оформление виз</title>
-    <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    <script src="buttonLanguage.js" defer></script>
-    <script src="buttonMenu.js" defer></script>
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <script type="module" src="main.js"></script>
 </head>
 <body>
     <header>
@@ -60,13 +59,13 @@
         </div>
     </header>
 
-    <img src="images/main-banner.jpg" alt="Профессиональное оформление виз" class="full-width-banner">
+    <img src="assets/images/main-banner.jpg" alt="Профессиональное оформление виз" class="full-width-banner">
 
     <main class="main-container">
         <!-- Первый блок -->
         <div class="content-row">
             <div class="image-column">
-                <img src="images/side-image.jpg" alt="Приветствие" class="content-image">
+                <img src="assets/images/side-image.jpg" alt="Приветствие" class="content-image">
             </div>
             <div class="text-column">
                 <h2 class="section-title" data-i18n="main.welcome.title">Добро пожаловать в Dragon Biztrip</h2>
@@ -79,13 +78,13 @@
         <!-- Второй блок -->
         <div class="content-row">
             <div class="image-column">
-                <img src="images/side-image.jpg" alt="Почему выбирают нас" class="content-image">
+                <img src="assets/images/side-image.jpg" alt="Почему выбирают нас" class="content-image">
             </div>
             <div class="text-column">
                 <h2 class="section-title" data-i18n="main.why_us.title">Почему выбирают именно нас?</h2>
                 <ul class="benefits-list">
                     <li><strong data-i18n="main.why_us.benefits.legality.title">Законность и надежность:</strong> <span data-i18n="main.why_us.benefits.legality.description">Мы соблюдаем все юридические нормы и предоставляем гарантии на наши услуги.</span></li>
-                    <li><strong data-i18n="main.why_us.benefits.opportunities.title">Широкие возможности:</strong> <span data-i18n="main.why_us.benefits.opportunities.description">Помогаем не только с визами, но и с созданием компании в России, Индии, Румынии и странах ЕС.</span></li>
+                    <li><strong data-i18n="main.why_us.benefits.opportunities.title">Широкие возможности:</strong> <span data-i18n="main.why_us.benefits.opportunities.description">Помогаем не только с визами, но и с созданием компании в России, Индии, Румынии, Вьетнаме и Китае.</span></li>
                     <li><strong data-i18n="main.why_us.benefits.experience.title">Большой опыт:</strong> <span data-i18n="main.why_us.benefits.experience.description">Наша команда имеет значительный опыт в сфере бизнес-поездок и визового оформления.</span></li>
                     <li><strong data-i18n="main.why_us.benefits.personal.title">Персональный подход:</strong> <span data-i18n="main.why_us.benefits.personal.description">Индивидуальные решения для каждого клиента.</span></li>
                     <li><strong data-i18n="main.why_us.benefits.comprehensive.title">Комплексные услуги:</strong> <span data-i18n="main.why_us.benefits.comprehensive.description">От визовой поддержки до организации всей поездки.</span></li>
@@ -96,7 +95,7 @@
         <!-- Третий блок -->
         <div class="content-row">
             <div class="image-column">
-                <img src="images/side-image.jpg" alt="Наши услуги" class="content-image">
+                <img src="assets/images/side-image.jpg" alt="Наши услуги" class="content-image">
             </div>
             <div class="text-column">
                 <h2 class="section-title" data-i18n="main.services.title">Наши услуги</h2>
@@ -121,12 +120,22 @@
         <!-- Четвертый блок -->
         <div class="content-row">
             <div class="image-column">
-                <img src="images/side-image.jpg" alt="Свяжитесь с нами" class="content-image">
+                <img src="assets/images/side-image.jpg" alt="Свяжитесь с нами" class="content-image">
             </div>
             <div class="text-column">
                 <div class="highlight-text">
                     <h3 data-i18n="main.cta.title">Присоединяйтесь к числу наших довольных клиентов</h3>
                     <p data-i18n="main.cta.description">Откройте для себя новые возможности с Dragon Biztrip. Свяжитесь с нами для получения консультации и подробнее обсудите ваши потребности.</p>
+                    <div class="contact-buttons">
+                        <a href="pages/contacts.html" class="submit-btn">
+                            <i class="fas fa-phone"></i>
+                            Связаться с нами
+                        </a>
+                        <a href="mailto:N8293372@gmail.com" class="submit-btn secondary">
+                            <i class="fas fa-envelope"></i>
+                            Написать письмо
+                        </a>
+                    </div>
                 </div>
             </div>
         </div>
@@ -137,19 +146,18 @@
             <div class="footer-info">
                 <div>
                     <h4 data-i18n="footer.contacts.title">Контактная информация</h4>
-                    <p><i class="fas fa-phone"></i> <span data-i18n="footer.contacts.phone">Телефон</span>: +7 (999) 123-45-67</p>
-                    <p><i class="fas fa-envelope"></i> <span data-i18n="footer.contacts.email">Email</span>: info@dragonbiztrip.com</p>
+                    <p><i class="fas fa-phone"></i> <span data-i18n="footer.contacts.phone">Телефон</span>: +7 (912) 217-50-50</p>
+                    <p><i class="fas fa-envelope"></i> <span data-i18n="footer.contacts.email">Email</span>: N8293372@gmail.com</p>
                 </div>
                 
                 <div>
                     <h4 data-i18n="footer.legal.title">Юридические данные</h4>
-                    <p><span data-i18n="footer.legal.inn">ИНН</span>: 1234567890</p>
-                    <p><span data-i18n="footer.legal.ogrn">ОГРН</span>: 1234567890123</p>
+                    <p><span data-i18n="footer.legal.inn">USCC</span>: 91370102MAEDF8FR4B</p>
                 </div>
                 
                 <div>
                     <h4 data-i18n="footer.address.title">Адрес</h4>
-                    <p>г. Москва, ул. Примерная, д. 123</p>
+                    <p> Jinan City,Yaojia Street,Business District Management Committee, No. 5050</p>
                 </div>
                 
                 <div>

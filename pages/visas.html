@@ -4,10 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dragon Biztrip - Визы</title>
-    <link rel="stylesheet" href="../styles.css">
+    <link rel="stylesheet" href="../assets/css/styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-    <script src="../buttonLanguage.js" defer></script>
-    <script src="../buttonMenu.js" defer></script>
+    <script type="module" src="../main.js"></script>
 </head>
 <body>
     <header>
@@ -63,54 +62,193 @@
     <main class="main-container">
         <div class="content-row">
             <div class="text-column">
-                <h2 class="section-title" data-i18n="visas.title">Визовые услуги</h2>
-                <div class="service-card">
-                    <h3 data-i18n="visas.types.business.title">Виза в Россию</h3>
-                    <p data-i18n="visas.types.business.description">Мы помогаем в оформлении различных типов виз в Россию:</p>
-                    <ul class="benefits-list">
-                        <li data-i18n="visas.types.business.title">Деловая виза</li>
-                        <li data-i18n="visas.types.tourist.title">Туристическая виза</li>
-                        <li data-i18n="visas.types.work.title">Рабочая виза</li>
-                        <li data-i18n="visas.types.student.title">Учебная виза</li>
-                    </ul>
+                <h2 class="section-title" data-i18n="visas.page_title">Визовые услуги</h2>
+            </div>
+        </div>
+        
+        <div class="countries-section">
+            <h2 class="section-title" data-i18n="visas.directions.title">Наши направления</h2>
+            <div class="countries-grid">
+                <!-- Индия -->
+                <div class="country-card">
+                    <div class="country-icon">
+                        <img src="../assets/images/india.jpg" alt="Индия" class="country-image">
+                    </div>
+                    <h3>ИНДИЯ</h3>
+                    <p class="country-description">
+                        Страна контрастов, древних храмов и современных технологий. От Тадж-Махала до IT-парков Бангалора.
+                    </p>
+                    <div class="visa-services">
+                        <h4><i class="fas fa-passport"></i> ТУРИСТИЧЕСКИЕ ВИЗЫ</h4>
+                        <ul class="visa-list">
+                            <li><i class="fas fa-calendar"></i> <strong>30 дней</strong></li>
+                            <li><i class="fas fa-calendar"></i> <strong>1 год</strong></li>
+                            <li><i class="fas fa-calendar"></i> <strong>5 лет</strong></li>
+                        </ul>
+                        
+                        <h4><i class="fas fa-home"></i> Stay (постоянная) виза</h4>
+                        <ul class="visa-list">
+                            <li><i class="fas fa-child"></i> <strong>Детская виза </strong>(для детей с родителями по бизнес-визе, действует 1 год)</li>
+                        </ul>
+                        
+                        <h4><i class="fas fa-plus-circle"></i> ДОПОЛНИТЕЛЬНЫЕ УСЛУГИ</h4>
+                        <ul class="visa-list">
+                            <li><i class="fas fa-building"></i> <strong>Регистрация компании</strong></li>
+                            <li><i class="fas fa-plane"></i> <strong>Бронирование билетов</strong></li>
+                            <li><i class="fas fa-file-alt"></i> <strong>Полное сопровождение</strong></li>
+                        </ul>
+                    </div>
                 </div>
                 
-                <div class="service-card">
-                    <h3 data-i18n="visas.types.business.title">Виза в Индию</h3>
-                    <p data-i18n="visas.types.business.description">Оформление виз в Индию для различных целей:</p>
-                    <ul class="benefits-list">
-                        <li data-i18n="visas.types.business.title">Бизнес-виза</li>
-                        <li data-i18n="visas.types.tourist.title">Туристическая виза</li>
-                        <li data-i18n="visas.types.work.title">Медицинская виза</li>
-                    </ul>
+                <!-- Вьетнам -->
+                <div class="country-card">
+                    <div class="country-icon">
+                        <img src="../assets/images/vietnam.jpg" alt="Вьетнам" class="country-image">
+                    </div>
+                    <h3>ВЬЕТНАМ</h3>
+                    <p class="country-description">
+                        Удивительная страна с потрясающими пляжами, древними храмами и вкуснейшей кухней. От Ханоя до Хошимина.
+                    </p>
+                    <div class="visa-services">
+                        <h4><i class="fas fa-passport"></i> ВИЗЫ ВО ВЬЕТНАМ</h4>
+                        <ul class="visa-list">
+                            <li><i class="fas fa-calendar"></i> <strong>Однократная 90 дней</strong></li>
+                            <li><i class="fas fa-calendar"></i> <strong>Многократная 90 дней</strong></li>
+                            <li><i class="fas fa-clock"></i> <strong>Срочная виза на границе</strong></li>
+                        </ul>
+                        
+                        <h4><i class="fas fa-plus-circle"></i> ДОПОЛНИТЕЛЬНЫЕ УСЛУГИ</h4>
+                        <ul class="visa-list">
+                            <li><i class="fas fa-building"></i> <strong>Регистрация компании</strong></li>
+                            <li><i class="fas fa-plane"></i> <strong>Бронирование билетов</strong></li>
+                            <li><i class="fas fa-file-alt"></i> <strong>Полное сопровождение</strong></li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <!-- Китай -->
+                <div class="country-card">
+                    <div class="country-icon">
+                        <img src="../assets/images/china.jpg" alt="Китай" class="country-image">
+                    </div>
+                    <h3>КИТАЙ</h3>
+                    <p class="country-description">
+                        Великая империя с богатой историей и стремительно развивающейся экономикой. От Великой стены до Шанхая.
+                    </p>
+                    <div class="visa-services">
+                        <h4><i class="fas fa-passport"></i> ВИЗЫ В КИТАЙ</h4>
+                        <ul class="visa-list">
+                            <li><i class="fas fa-plane"></i> <strong>Туристическая (L) однократная</strong></li>
+                            <li><i class="fas fa-plane"></i> <strong>Туристическая (L) двукратная</strong></li>
+                            <li><i class="fas fa-briefcase"></i> <strong>Бизнес-виза (М) однократная</strong></li>
+                            <li><i class="fas fa-briefcase"></i> <strong>Бизнес-виза (М) двукратная</strong></li>
+                        </ul>
+                        
+                        <h4><i class="fas fa-plus-circle"></i> ДОПОЛНИТЕЛЬНЫЕ УСЛУГИ</h4>
+                        <ul class="visa-list">
+                            <li><i class="fas fa-building"></i> <strong>Регистрация компании</strong></li>
+                            <li><i class="fas fa-plane"></i> <strong>Бронирование билетов</strong></li>
+                            <li><i class="fas fa-file-alt"></i> <strong>Полное сопровождение</strong></li>
+                        </ul>
+                    </div>
                 </div>
 
-                <div class="service-card">
-                    <h3 data-i18n="visas.types.business.title">Шенгенская виза</h3>
-                    <p data-i18n="visas.types.business.description">Помощь в получении шенгенской визы для поездок в страны Европейского Союза.</p>
+                <!-- Румыния -->
+                <div class="country-card">
+                    <div class="country-icon">
+                        <img src="../assets/images/romania.jpg" alt="Румыния" class="country-image">
+                    </div>
+                    <h3> РУМЫНИЯ</h3>
+                    <p class="country-description">
+                        Красивая страна в сердце Европы с богатой историей, средневековыми замками и живописными Карпатами. 
+                        От Трансильвании до Бухареста.
+                    </p>
+                    <div class="visa-services">
+                        <h4><i class="fas fa-passport"></i> ВИЗЫ В РУМЫНИЮ</h4>
+                        <ul class="visa-list">
+                            <li><i class="fas fa-plane"></i> <strong>Шенгенская виза</strong> – для туризма и бизнеса</li>
+                            <li><i class="fas fa-calendar"></i> <strong>Краткосрочная виза</strong> – до 90 дней</li>
+                            <li><i class="fas fa-briefcase"></i> <strong>Бизнес-виза</strong> – для деловых поездок</li>
+                            <li><i class="fas fa-graduation-cap"></i> <strong>Студенческая виза</strong> – для обучения</li>
+                        </ul>
+                        
+                        <h4><i class="fas fa-plus-circle"></i> ДОПОЛНИТЕЛЬНЫЕ УСЛУГИ</h4>
+                        <ul class="visa-list">
+                            <li><i class="fas fa-castle"></i> <strong>Экскурсии по замкам</strong> – Трансильвания</li>
+                            <li><i class="fas fa-mountain"></i> <strong>Горнолыжные туры</strong> – Карпаты</li>
+                            <li><i class="fas fa-city"></i> <strong>Городские туры</strong> – Бухарест, Сибиу</li>
+                            <li><i class="fas fa-car"></i> <strong>Аренда автомобиля</strong> – для путешествий</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Дополнительные услуги -->
+        <div class="additional-services">
+            <h2 class="section-title" data-i18n="visas.additional.title">Дополнительные услуги</h2>
+            <div class="services-grid">
+                <div class="service-item">
+                    <i class="fas fa-file-contract"></i>
+                    <h3>Подготовка документов</h3>
+                    <p>Полная подготовка и проверка всех необходимых документов для получения визы</p>
+                </div>
+                <div class="service-item">
+                    <i class="fas fa-calendar-check"></i>
+                    <h3>Запись на подачу</h3>
+                    <p>Запись в консульство и сопровождение на подачу документов</p>
+                </div>
+                <div class="service-item">
+                    <i class="fas fa-plane"></i>
+                    <h3>Авиабилеты</h3>
+                    <p>Бронирование авиабилетов с учетом требований визовых центров</p>
+                </div>
+                <div class="service-item">
+                    <i class="fas fa-hotel"></i>
+                    <h3>Бронирование отелей</h3>
+                    <p>Бронирование отелей для подтверждения маршрута поездки</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Контактная информация -->
+        <div class="contact-section">
+            <div class="highlight-text">
+                <h3 data-i18n="visas.contact.title">Оформить визу</h3>
+                <p data-i18n="visas.contact.description">
+                    Свяжитесь с нами для получения подробной информации о визовых услугах и консультации по документам. 
+                    Мы поможем подобрать оптимальный вариант визы для вашей поездки.
+                </p>
+                <div class="contact-buttons">
+                    <a href="contacts.html" class="submit-btn">
+                        <i class="fas fa-phone"></i>
+                        Связаться с нами
+                    </a>
+                    <a href="mailto:info@dragonbiztrip.com" class="submit-btn secondary">
+                        <i class="fas fa-envelope"></i>
+                        Написать письмо
+                    </a>
                 </div>
             </div>
         </div>
     </main>
-    
+
     <footer>
         <div class="footer-container">
             <div class="footer-info">
                 <div>
                     <h4 data-i18n="footer.contacts.title">Контактная информация</h4>
-                    <p><i class="fas fa-phone"></i> <span data-i18n="footer.contacts.phone">Телефон</span>: +7 (999) 123-45-67</p>
-                    <p><i class="fas fa-envelope"></i> <span data-i18n="footer.contacts.email">Email</span>: info@dragonbiztrip.com</p>
+                    <p><i class="fas fa-phone"></i> <span data-i18n="footer.contacts.phone">Телефон</span>: +7 (912) 217-50-50</p>
+                    <p><i class="fas fa-envelope"></i> <span data-i18n="footer.contacts.email">Email</span>: N8293372@gmail.com</p>
                 </div>
                 
                 <div>
                     <h4 data-i18n="footer.legal.title">Юридические данные</h4>
-                    <p><span data-i18n="footer.legal.inn">ИНН</span>: 1234567890</p>
-                    <p><span data-i18n="footer.legal.ogrn">ОГРН</span>: 1234567890123</p>
+                    <p><span data-i18n="footer.legal.inn">USCC</span>: 91370102MAEDF8FR4B</p>
                 </div>
                 
                 <div>
                     <h4 data-i18n="footer.address.title">Адрес</h4>
-                    <p>г. Москва, ул. Примерная, д. 123</p>
+                    <p> Jinan City,Yaojia Street,Business District Management Committee, No. 5050</p>
                 </div>
                 
                 <div>

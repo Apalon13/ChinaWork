@@ -4,10 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dragon Biztrip - Партнеры</title>
-    <link rel="stylesheet" href="../styles.css">
+    <link rel="stylesheet" href="../assets/css/styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-    <script src="../buttonLanguage.js"></script>
-    <script src="../buttonMenu.js" defer></script>
+    <script type="module" src="../main.js"></script>
 </head>
 <body>
     <header>
@@ -68,16 +67,14 @@
                 <div class="service-card">
                     <h3 data-i18n="partners.visa.title">Визовые центры</h3>
                     <ul class="benefits-list">
-                        <li data-i18n="partners.visa.items.vfs">VFS Global - Международный визовый центр</li>
-                        <li data-i18n="partners.visa.items.pony">Pony Express - Курьерская служба</li>
-                        <li data-i18n="partners.visa.items.centers">Визовые центры России, Индии и Румынии</li>
+                        <li data-i18n="partners.visa.items.centers">Визовые центры России, Индии, Вьетнама, Румынии и Китая</li>
                     </ul>
                 </div>
 
                 <div class="service-card">
                     <h3 data-i18n="partners.transport.title">Транспортные компании</h3>
                     <ul class="benefits-list">
-                        <li data-i18n="partners.transport.items.airlines">Авиакомпании России и Китая</li>
+                        <li data-i18n="partners.transport.items.airlines">Авиакомпании России, Индии, Вьетнама, Румынии и Китая</li>
                         <li data-i18n="partners.transport.items.international">Международные транспортные компании</li>
                         <li data-i18n="partners.transport.items.local">Локальные транспортные службы</li>
                     </ul>
@@ -87,7 +84,7 @@
                     <h3 data-i18n="partners.hotels.title">Отели и гостиницы</h3>
                     <ul class="benefits-list">
                         <li data-i18n="partners.hotels.items.chains">Международные гостиничные сети</li>
-                        <li data-i18n="partners.hotels.items.business">Бизнес-отели в России, Индии и Румынии</li>
+                        <li data-i18n="partners.hotels.items.business">Бизнес-отели в России, Индии, Вьетнама, Румынии и Китая</li>
                         <li data-i18n="partners.hotels.items.apartments">Апартаменты для длительного проживания</li>
                     </ul>
                 </div>
@@ -95,17 +92,76 @@
                 <div class="service-card">
                     <h3 data-i18n="partners.business.title">Бизнес-партнеры</h3>
                     <ul class="benefits-list">
-                        <li data-i18n="partners.business.items.chambers">Торговые палаты России, Китая, Индии и Румынии</li>
+                        <li data-i18n="partners.business.items.chambers">Торговые палаты России, Индии, Вьетнама, Румынии и Китая</li>
                         <li data-i18n="partners.business.items.associations">Бизнес-ассоциации</li>
                         <li data-i18n="partners.business.items.consulting">Консалтинговые компании</li>
                         <li data-i18n="partners.business.items.legal">Юридические фирмы</li>
+                        <li class="partner-developer">
+                            <button class="developer-btn" data-action="toggle-developer">
+                                <i class="fas fa-code"></i> Британов Константин (разработчик сайта)
+                                <i class="fas fa-chevron-down" id="developerArrow"></i>
+                            </button>
+                        </li>
                     </ul>
+                    
+                    <!-- Блок информации о разработчике -->
+                    <div class="developer-info" id="developerInfo">
+                        <div class="developer-card">
+                            <div class="developer-header">
+                                <div class="developer-avatar">
+                                    <i class="fas fa-user-tie"></i>
+                                </div>
+                                <div class="developer-details">
+                                    <h4>Британов Константин</h4>
+                                    <p class="developer-title">Full-Stack Developer</p>
+                                    <p class="developer-description">
+                                        Разработчик по созданию современных веб-приложений. 
+                                        Специализируется на frontend и backend разработке, создании адаптивных интерфейсов 
+                                        и оптимизации производительности.
+                                    </p>
+                                </div>
+                            </div>
+                            
+                            <div class="developer-skills">
+                                <h5>Технологии:</h5>
+                                <div class="skills-tags">
+                                    <span class="skill-tag">HTML5</span>
+                                    <span class="skill-tag">CSS3</span> 
+                                    <span class="skill-tag">JavaScript</span>
+                                    <span class="skill-tag">Node.js</span>
+                                    <span class="skill-tag">MySQL</span>
+                                </div>
+                            </div>
+                            
+                            <div class="developer-contact">
+                                <h5>Контакты:</h5>
+                                <div class="contact-links">
+                                    <a href="https://github.com/Apalon13" target="_blank" class="contact-link">
+                                        <i class="fab fa-github"></i>
+                                        <span>GitHub</span>
+                                    </a>
+                                    <a href="https://t.me/Me4chiKun" target="_blank" class="contact-link">
+                                        <i class="fab fa-telegram"></i>
+                                        <span>Telegram</span>
+                                    </a>
+                                    <a href="mailto:britanov.2005@mail.ru" class="contact-link">
+                                        <i class="fas fa-envelope"></i>
+                                        <span>Email</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
 
                 <div class="service-card">
                     <h3 data-i18n="partners.join.title">Стать нашим партнером</h3>
-                    <p data-i18n="partners.join.description">Мы всегда открыты для новых партнерских отношений. Если вы заинтересованы в сотрудничестве, пожалуйста, свяжитесь с нами через форму обратной связи на странице контактов.</p>
-                    <a href="contacts.html" class="submit-btn" data-i18n="partners.join.button">Связаться с нами</a>
+                    <p data-i18n="partners.join.description">Мы всегда открыты для новых партнерских отношений. Если вы заинтересованы в сотрудничестве, пожалуйста, свяжитесь с нами.</p>
+                    <div class="social-links">
+                        <a href="#" class="social-link" target="_blank"><i class="fab fa-weixin"></i> WeChat</a>
+                        <a href="https://t.me/dragonbiztripVISA" class="social-link" target="_blank"><i class="fab fa-telegram"></i> Telegram</a>
+                        <a href="#" class="social-link" target="_blank"><i class="fab fa-whatsapp"></i> WhatsApp</a>
+                    </div>
                 </div>
             </div>
         </div>
@@ -116,19 +172,18 @@
             <div class="footer-info">
                 <div>
                     <h4 data-i18n="footer.contacts.title">Контактная информация</h4>
-                    <p><i class="fas fa-phone"></i> <span data-i18n="footer.contacts.phone">Телефон</span>: +7 (999) 123-45-67</p>
-                    <p><i class="fas fa-envelope"></i> <span data-i18n="footer.contacts.email">Email</span>: info@dragonbiztrip.com</p>
+                    <p><i class="fas fa-phone"></i> <span data-i18n="footer.contacts.phone">Телефон</span>: +7 (912) 217-50-50</p>
+                    <p><i class="fas fa-envelope"></i> <span data-i18n="footer.contacts.email">Email</span>: N8293372@gmail.com</p>
                 </div>
                 
                 <div>
                     <h4 data-i18n="footer.legal.title">Юридические данные</h4>
-                    <p><span data-i18n="footer.legal.inn">ИНН</span>: 1234567890</p>
-                    <p><span data-i18n="footer.legal.ogrn">ОГРН</span>: 1234567890123</p>
+                    <p><span data-i18n="footer.legal.inn">USCC</span>: 91370102MAEDF8FR4B</p>
                 </div>
                 
                 <div>
                     <h4 data-i18n="footer.address.title">Адрес</h4>
-                    <p>г. Москва, ул. Примерная, д. 123</p>
+                    <p> Jinan City,Yaojia Street,Business District Management Committee, No. 5050</p>
                 </div>
                 
                 <div>
