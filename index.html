@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="assets/css/styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <script type="module" src="main.js"></script>
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' https://cdnjs.cloudflare.com; style-src 'self' https://cdnjs.cloudflare.com; img-src 'self' data:; connect-src 'self'; font-src 'self' https://cdnjs.cloudflare.com;">
 </head>
 <body>
     <header>
@@ -17,16 +18,15 @@
                     <span></span>
                     <span></span>
                 </button>
-                <div class="logo">Dragon Biztrip</div>
+                <div class="logo" data-i18n="main.logo">Dragon Biztrip</div>
                 <div class="language-switcher">
                     <button class="language-btn" id="languageBtn">
                         <i class="fas fa-globe"></i>
-                        <span>RU</span>
-                    </button>
+                        <span data-i18n="common.lang_ru">RU</span></button>
                     <div class="language-dropdown" id="languageDropdown">
-                        <button class="lang-option" data-lang="ru">RU</button>
-                        <button class="lang-option" data-lang="en">EN</button>
-                        <button class="lang-option" data-lang="zh">中文</button>
+                        <button class="lang-option" data-lang="ru" data-i18n="common.lang_ru">RU</button>
+                        <button class="lang-option" data-lang="en" data-i18n="common.lang_en">EN</button>
+                        <button class="lang-option" data-lang="zh" data-i18n="common.lang_zh">中文</button>
                     </div>
                 </div>
             </div>
@@ -59,13 +59,13 @@
         </div>
     </header>
 
-    <img src="assets/images/main-banner.jpg" alt="Профессиональное оформление виз" class="full-width-banner">
+    <img src="assets/images/main-banner.jpg" alt="main.banner" data-i18n-alt="main.banner_alt" class="full-width-banner">
 
     <main class="main-container">
         <!-- Первый блок -->
         <div class="content-row">
             <div class="image-column">
-                <img src="assets/images/side-image.jpg" alt="Приветствие" class="content-image">
+                <img src="assets/images/side-image.jpg" alt="main.welcome_img" data-i18n-alt="main.welcome_img_alt" class="content-image">
             </div>
             <div class="text-column">
                 <h2 class="section-title" data-i18n="main.welcome.title">Добро пожаловать в Dragon Biztrip</h2>
@@ -78,7 +78,7 @@
         <!-- Второй блок -->
         <div class="content-row">
             <div class="image-column">
-                <img src="assets/images/side-image.jpg" alt="Почему выбирают нас" class="content-image">
+                <img src="assets/images/side-image2.jpg" alt="main.why_us_img" data-i18n-alt="main.why_us_img_alt" class="content-image">
             </div>
             <div class="text-column">
                 <h2 class="section-title" data-i18n="main.why_us.title">Почему выбирают именно нас?</h2>
@@ -95,7 +95,7 @@
         <!-- Третий блок -->
         <div class="content-row">
             <div class="image-column">
-                <img src="assets/images/side-image.jpg" alt="Наши услуги" class="content-image">
+                <img src="assets/images/side-image3.jpg" alt="main.services_img" data-i18n-alt="main.services_img_alt" class="content-image">
             </div>
             <div class="text-column">
                 <h2 class="section-title" data-i18n="main.services.title">Наши услуги</h2>
@@ -120,7 +120,7 @@
         <!-- Четвертый блок -->
         <div class="content-row">
             <div class="image-column">
-                <img src="assets/images/side-image.jpg" alt="Свяжитесь с нами" class="content-image">
+                <img src="assets/images/side-image4.jpg" alt="main.cta_img" data-i18n-alt="main.cta_img_alt" class="content-image">
             </div>
             <div class="text-column">
                 <div class="highlight-text">
@@ -129,11 +129,11 @@
                     <div class="contact-buttons">
                         <a href="pages/contacts.html" class="submit-btn">
                             <i class="fas fa-phone"></i>
-                            Связаться с нами
+                            <span data-i18n="common.contact_us">Связаться с нами</span>
                         </a>
                         <a href="mailto:N8293372@gmail.com" class="submit-btn secondary">
                             <i class="fas fa-envelope"></i>
-                            Написать письмо
+                            <span data-i18n="common.write_email">Написать письмо</span>
                         </a>
                     </div>
                 </div>
@@ -168,7 +168,7 @@
             </div>
             
             <div class="copyright">
-                <p>&copy; 2024 Dragon Biztrip. <span data-i18n="footer.copyright">Все права защищены</span></p>
+                <p>&copy; 2025 Dragon Biztrip. <span data-i18n="footer.copyright">Все права защищены</span></p>
             </div>
         </div>
     </footer>

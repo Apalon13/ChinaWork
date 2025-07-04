@@ -35,3 +35,21 @@ export function initMobileMenu() {
         }
     });
 }
+
+// Функция для инициализации отправки формы в WhatsApp
+export function initContactFormToWhatsApp() {
+    const form = document.querySelector('.contact-form');
+    if (!form) return;
+    form.addEventListener('submit', function(e) {
+        e.preventDefault();
+        const name = form.querySelector('[name="name"]').value.trim();
+        const email = form.querySelector('[name="email"]').value.trim();
+        const phone = form.querySelector('[name="phone"]').value.trim();
+        const message = form.querySelector('[name="message"]').value.trim();
+        let text = `Здравствуйте!%0AМеня зовут: ${name}%0AEmail: ${email}%0AТелефон: ${phone}%0AСообщение: ${message}`;
+        // WhatsApp номер из контактов
+        const waNumber = '916238458249';
+        const waUrl = `https://wa.me/${waNumber}?text=${text}`;
+        window.open(waUrl, '_blank');
+    });
+}

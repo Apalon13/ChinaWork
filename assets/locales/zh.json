@@ -109,7 +109,15 @@
         "24/7全天候支持",
         "机票预订",
         "旅行保险"
-      ]
+      ],
+      "flight": "机票",
+      "flight_desc": "预订和购买商务舱及经济舱机票",
+      "insurance": "保险",
+      "insurance_desc": "全面旅行及医疗保险",
+      "documents": "文件",
+      "documents_desc": "准备和办理所有必要文件",
+      "support": "24/7支持",
+      "support_desc": "整个行程期间全天候支持"
     },
     "advantages": {
       "title": "与我们合作的优势",
@@ -119,6 +127,53 @@
         "专业团队",
         "服务质量保证"
       ]
+    },
+    "china": {
+      "title": "中国",
+      "description": "中国商务游包括参观展会、会议、合作伙伴会面和工厂考察。",
+      "duration": "时长：3-14天",
+      "group": "团队：1-20人",
+      "level": "级别：商务舱"
+    },
+    "vietnam": {
+      "title": "越南",
+      "description": "越南商务行程包括参观工业区、与当地企业家会面及市场调研。",
+      "duration": "时长：5-10天",
+      "group": "团队：1-15人",
+      "level": "级别：尊享",
+      "included": "行程包含：",
+      "translator": "商务翻译",
+      "transport": "VIP交通",
+      "hotels": "五星级酒店",
+      "dinners": "商务晚宴"
+    },
+    "india": {
+      "title": "印度",
+      "description": "印度商务游聚焦IT、制造业和贸易。与印度公司会面及参观展会。",
+      "duration": "时长：7-12天",
+      "group": "团队：1-25人",
+      "level": "级别：商务",
+      "included": "行程包含：",
+      "translator": "技术翻译",
+      "transport": "企业交通",
+      "hotels": "商务酒店",
+      "conferences": "IT会议"
+    },
+    "romania": {
+      "title": "罗马尼亚",
+      "description": "罗马尼亚商务游包括有组织的观光、酒店住宿和附加服务。",
+      "duration": "时长：90天",
+      "group": "团队：1-25",
+      "level": "级别：商务舱"
+    },
+    "title_tag": "Dragon Biztrip - 商务考察",
+    "contact": {
+      "title": "预订商务考察",
+      "description": "请联系我们，获取商务考察的详细信息并制定个性化方案。"
+    },
+    "page_title": "商务考察",
+    "directions": {
+      "title": "我们的方向"
     }
   },
   "footer": {
@@ -148,7 +203,12 @@
     "error": "发生错误",
     "retry": "重试",
     "close": "关闭",
-    "menu": "菜单"
+    "menu": "菜单",
+    "contact_us": "联系我们",
+    "write_email": "写邮件",
+    "lang_ru": "RU",
+    "lang_en": "EN",
+    "lang_zh": "中文"
   },
   "about": {
     "title": "关于 Dragon Biztrip",
@@ -162,25 +222,22 @@
     },
     "advantages": {
       "title": "我们的优势",
-      "items": [
-        "拥有多年经验的专业团队",
-        "深入了解各国法律法规",
-        "为每位客户提供个性化服务",
-        "全程全方位支持",
-        "多语言支持",
-        "严格遵守保密制度"
-      ]
+      "team": "拥有多年经验的专业团队",
+      "law": "深谙各国法律法规",
+      "individual": "为每位客户提供个性化服务",
+      "full": "全程陪同支持",
+      "languages": "多语言支持",
+      "confidential": "严格遵守保密制度"
     },
     "values": {
       "title": "我们的价值观",
-      "items": [
-        "专业和负责",
-        "诚实和透明",
-        "以客户为中心",
-        "创新解决方案",
-        "持续发展"
-      ]
-    }
+      "professional": "专业与责任",
+      "honesty": "诚信与透明",
+      "client": "以客户为中心",
+      "innovation": "创新解决方案",
+      "development": "持续发展"
+    },
+    "title_tag": "Dragon Biztrip - 关于公司"
   },
   "visas": {
     "title": "签证",
@@ -221,43 +278,128 @@
         "邀请函",
         "根据签证类型的额外文件"
       ]
-    }
+    },
+    "india": {
+      "title": "印度",
+      "description": "一个充满对比的国家，拥有古老的寺庙和现代科技。从泰姬陵到班加罗尔的IT园区。",
+      "tourist_title": "旅游签证",
+      "tourist_30": "30天",
+      "tourist_1y": "1年",
+      "tourist_5y": "5年",
+      "stay_title": "长期（永久）签证",
+      "child": "儿童签证（适用于持商务签证父母的子女，有效期1年）",
+      "add_services_title": "附加服务",
+      "reg_company": "公司注册",
+      "tickets": "机票预订",
+      "full_support": "全程协助"
+    },
+    "vietnam": {
+      "title": "越南",
+      "description": "一个拥有迷人海滩、古老寺庙和美味佳肴的神奇国度。从河内到胡志明市。",
+      "visa_title": "越南签证",
+      "single_90": "单次90天",
+      "multi_90": "多次90天",
+      "urgent": "边境加急签证",
+      "add_services_title": "附加服务",
+      "reg_company": "公司注册",
+      "tickets": "机票预订",
+      "full_support": "全程协助"
+    },
+    "china": {
+      "title": "中国",
+      "description": "拥有悠久历史和快速发展的经济体的大国。从长城到上海。",
+      "visa_title": "中国签证",
+      "tourist_l_single": "旅游（L）单次",
+      "tourist_l_double": "旅游（L）双次",
+      "business_m_single": "商务签证（M）单次",
+      "business_m_double": "商务签证（M）双次",
+      "add_services_title": "附加服务",
+      "reg_company": "公司注册",
+      "tickets": "机票预订",
+      "full_support": "全程协助"
+    },
+    "romania": {
+      "title": "罗马尼亚",
+      "description": "欧洲心脏地带的美丽国家，拥有丰富的历史、中世纪城堡和风景如画的喀尔巴阡山脉。从特兰西瓦尼亚到布加勒斯特。",
+      "visa_title": "罗马尼亚签证",
+      "schengen": "申根签证——适用于旅游和商务",
+      "short": "短期签证——最长90天",
+      "business": "商务签证——商务出行",
+      "student": "学生签证——学习",
+      "add_services_title": "附加服务",
+      "castle": "城堡游——特兰西瓦尼亚",
+      "ski": "滑雪游——喀尔巴阡山",
+      "city": "城市游——布加勒斯特、西比乌",
+      "car": "汽车租赁——旅行用"
+    },
+    "title_tag": "Dragon Biztrip - 签证",
+    "additional": {
+      "title": "附加服务",
+      "docs_title": "材料准备",
+      "docs_desc": "为办理签证全面准备和审核所有必要材料",
+      "appointment_title": "预约递交",
+      "appointment_desc": "协助预约领事馆并陪同递交材料",
+      "tickets_title": "机票预订",
+      "tickets_desc": "根据签证中心要求预订机票",
+      "hotels_title": "酒店预订",
+      "hotels_desc": "预订酒店以确认您的行程安排"
+    },
+    "contact": {
+      "title": "办理签证",
+      "description": "如需了解签证服务详情及材料咨询，请联系我们。我们将帮助您选择最适合您行程的签证类型。"
+    },
+    "page_title": "签证服务",
+    "directions": { "title": "我们的方向" }
   },
   "services": {
     "title": "我们的服务",
+    "title_tag": "Dragon Biztrip - 服务",
+    "visa_support": {
+      "title": "签证支持",
+      "description": "签证办理全程服务：",
+      "consult": "签证类型选择咨询",
+      "docs": "所需材料准备",
+      "forms": "填写表格和申请",
+      "translate": "文件翻译"
+    },
+    "business_trips": {
+      "title": "商务考察组织",
+      "description": "商务考察全程陪同：",
+      "hotels": "酒店预订",
+      "meetings": "合作伙伴会面安排",
+      "transport": "接送与交通服务",
+      "support": "24/7支持"
+    },
+    "consulting": {
+      "title": "商务咨询",
+      "description": "专业商务咨询：",
+      "market": "市场分析",
+      "tax": "税务咨询",
+      "startup": "创业支持"
+    },
     "list": {
       "visa_support": {
         "title": "签证支持",
-        "description": "全面的签证申请支持：",
-        "items": [
-          "签证类型咨询",
-          "文件准备",
-          "表格填写协助",
-          "领事馆陪同",
-          "文件翻译"
-        ]
+        "description": "签证办理全程协助：",
+        "consult": "签证类型选择咨询",
+        "docs": "所需材料准备",
+        "forms": "表格和申请填写",
+        "translate": "文件翻译"
       },
       "business_trips": {
-        "title": "商务旅行组织",
-        "description": "完整的商务旅行支持：",
-        "items": [
-          "酒店预订",
-          "合作伙伴会议组织",
-          "接送和交通服务",
-          "翻译服务",
-          "24/7全天候支持"
-        ]
+        "title": "商务行程组织",
+        "description": "商务行程全程协助：",
+        "hotels": "酒店预订",
+        "meetings": "合作伙伴会面安排",
+        "transport": "接送与交通服务",
+        "support": "全天候支持"
       },
       "consulting": {
         "title": "商务咨询",
-        "description": "专业商务咨询服务：",
-        "items": [
-          "市场分析",
-          "合作伙伴寻找",
-          "法律支持",
-          "税务咨询",
-          "企业设立协助"
-        ]
+        "description": "专业商务咨询：",
+        "market": "市场分析",
+        "tax": "税务咨询",
+        "startup": "创业支持"
       },
       "additional": {
         "title": "附加服务",
@@ -292,7 +434,8 @@
     },
     "social": {
       "title": "关注我们的社交媒体"
-    }
+    },
+    "title_tag": "Dragon Biztrip - 联系方式"
   },
   "links": {
     "title": "实用链接",
@@ -328,7 +471,8 @@
         "wto": "世贸组织 - 国际贸易信息",
         "chamber": "各国商会"
       }
-    }
+    },
+    "title_tag": "Dragon Biztrip - 实用链接"
   },
   "partners": {
     "title": "我们的合作伙伴",
@@ -369,7 +513,19 @@
       "title": "成为我们的合作伙伴",
       "description": "我们始终欢迎新的合作伙伴关系。如果您对合作感兴趣，请通过联系页面的反馈表与我们联系。",
       "button": "联系我们"
-    }
+    },
+    "developer": {
+      "btn": "Konstantin Britanov（网站开发者）",
+      "name": "Konstantin Britanov",
+      "title": "全栈开发工程师",
+      "description": "现代网页应用开发者。专注于前端和后端开发，响应式界面设计与性能优化。",
+      "skills": "技术栈：",
+      "contacts": "联系方式：",
+      "github": "GitHub",
+      "telegram": "Telegram",
+      "email": "邮箱"
+    },
+    "title_tag": "Dragon Biztrip - 合作伙伴"
   },
   "main": {
     "title": "Dragon Biztrip - 签证服务",
@@ -420,6 +576,23 @@
     "cta": {
       "title": "加入我们满意的客户行列",
       "description": "与 Dragon Biztrip 一起发现新的机会。联系我们获取咨询并详细讨论您的需求。"
+    },
+    "logo": "Dragon Biztrip",
+    "banner_alt": "专业签证办理",
+    "welcome_img_alt": "欢迎",
+    "why_us_img_alt": "为什么选择我们",
+    "services_img_alt": "我们的服务",
+    "cta_img_alt": "联系我们",
+    "developer": {
+      "btn": "Konstantin Britanov（网站开发者）",
+      "name": "Konstantin Britanov",
+      "title": "全栈开发工程师",
+      "description": "现代网页应用开发者。专注于前端和后端开发，响应式界面设计与性能优化。",
+      "skills": "技术栈：",
+      "contacts": "联系方式：",
+      "github": "GitHub",
+      "telegram": "Telegram",
+      "email": "邮箱"
     }
   }
 }

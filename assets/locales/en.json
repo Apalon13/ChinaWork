@@ -109,7 +109,15 @@
         "24/7 support",
         "Flight booking",
         "Travel insurance"
-      ]
+      ],
+      "flight": "Flight Tickets",
+      "flight_desc": "Booking and purchase of business and economy class flight tickets",
+      "insurance": "Insurance",
+      "insurance_desc": "Comprehensive travel and medical insurance",
+      "documents": "Documents",
+      "documents_desc": "Preparation and processing of all necessary documents",
+      "support": "24/7 Support",
+      "support_desc": "Round-the-clock support during the entire trip"
     },
     "advantages": {
       "title": "Benefits of Working with Us",
@@ -119,6 +127,53 @@
         "Professional team",
         "Service quality guarantee"
       ]
+    },
+    "china": {
+      "title": "China",
+      "description": "Business tours to China include visits to exhibitions, conferences, partner meetings and factory tours.",
+      "duration": "Duration: 3-14 days",
+      "group": "Groups: 1-20 people",
+      "level": "Level: Business class"
+    },
+    "vietnam": {
+      "title": "Vietnam",
+      "description": "Business trips to Vietnam with visits to industrial zones, meetings with local entrepreneurs and market research.",
+      "duration": "Duration: 5-10 days",
+      "group": "Groups: 1-15 people",
+      "level": "Level: Premium",
+      "included": "Included in the tour:",
+      "translator": "Business interpreter",
+      "transport": "VIP transport",
+      "hotels": "5-star hotels",
+      "dinners": "Business dinners"
+    },
+    "india": {
+      "title": "India",
+      "description": "Business tours to India focused on IT, manufacturing and trade. Meetings with Indian companies and exhibition visits.",
+      "duration": "Duration: 7-12 days",
+      "group": "Groups: 1-25 people",
+      "level": "Level: Business",
+      "included": "Included in the tour:",
+      "translator": "Technical interpreter",
+      "transport": "Corporate transport",
+      "hotels": "Business hotels",
+      "conferences": "IT conferences"
+    },
+    "romania": {
+      "title": "Romania",
+      "description": "Business tours to Romania include organized sightseeing tours, hotel accommodation and additional services.",
+      "duration": "Duration: 90 days",
+      "group": "Groups: 1-25",
+      "level": "Level: business class"
+    },
+    "title_tag": "Dragon Biztrip - Business Tours",
+    "contact": {
+      "title": "Order a Business Tour",
+      "description": "Contact us for detailed information about business tours and to create a personalized program."
+    },
+    "page_title": "Business Tours",
+    "directions": {
+      "title": "Our Destinations"
     }
   },
   "footer": {
@@ -148,7 +203,12 @@
     "error": "An error occurred",
     "retry": "Retry",
     "close": "Close",
-    "menu": "Menu"
+    "menu": "Menu",
+    "contact_us": "Contact Us",
+    "write_email": "Write Email",
+    "lang_ru": "RU",
+    "lang_en": "EN",
+    "lang_zh": "中文"
   },
   "about": {
     "title": "About Dragon Biztrip",
@@ -162,25 +222,22 @@
     },
     "advantages": {
       "title": "Our Advantages",
-      "items": [
-        "Professional team with years of experience",
-        "Deep knowledge of different countries' legislation",
-        "Individual approach to each client",
-        "Full support at all stages",
-        "Multilingual support",
-        "Strict confidentiality compliance"
-      ]
+      "team": "Professional team with years of experience",
+      "law": "Deep knowledge of different countries' legislation",
+      "individual": "Individual approach to each client",
+      "full": "Full support at all stages",
+      "languages": "Multilingual support",
+      "confidential": "Strict confidentiality compliance"
     },
     "values": {
       "title": "Our Values",
-      "items": [
-        "Professionalism and responsibility",
-        "Honesty and transparency",
-        "Client-oriented approach",
-        "Innovative solutions",
-        "Continuous development"
-      ]
-    }
+      "professional": "Professionalism and responsibility",
+      "honesty": "Honesty and transparency",
+      "client": "Client-oriented approach",
+      "innovation": "Innovative solutions",
+      "development": "Continuous development"
+    },
+    "title_tag": "Dragon Biztrip - About"
   },
   "visas": {
     "title": "Visas",
@@ -221,56 +278,115 @@
         "Invitation letter",
         "Additional documents depending on visa type"
       ]
-    }
+    },
+    "india": {
+      "title": "INDIA",
+      "description": "A country of contrasts, ancient temples and modern technologies. From the Taj Mahal to Bangalore's IT parks.",
+      "tourist_title": "TOURIST VISAS",
+      "tourist_30": "30 days",
+      "tourist_1y": "1 year",
+      "tourist_5y": "5 years",
+      "stay_title": "Stay (permanent) visa",
+      "child": "Child visa (for children with parents on a business visa, valid for 1 year)",
+      "add_services_title": "ADDITIONAL SERVICES",
+      "reg_company": "Company registration",
+      "tickets": "Ticket booking",
+      "full_support": "Full support"
+    },
+    "vietnam": {
+      "title": "VIETNAM",
+      "description": "An amazing country with stunning beaches, ancient temples and delicious cuisine. From Hanoi to Ho Chi Minh City.",
+      "visa_title": "VISAS TO VIETNAM",
+      "single_90": "Single 90 days",
+      "multi_90": "Multiple 90 days",
+      "urgent": "Urgent visa at the border",
+      "add_services_title": "ADDITIONAL SERVICES",
+      "reg_company": "Company registration",
+      "tickets": "Ticket booking",
+      "full_support": "Full support"
+    },
+    "china": {
+      "title": "CHINA",
+      "description": "A great empire with a rich history and a rapidly developing economy. From the Great Wall to Shanghai.",
+      "visa_title": "VISAS TO CHINA",
+      "tourist_l_single": "Tourist (L) single entry",
+      "tourist_l_double": "Tourist (L) double entry",
+      "business_m_single": "Business visa (M) single entry",
+      "business_m_double": "Business visa (M) double entry",
+      "add_services_title": "ADDITIONAL SERVICES",
+      "reg_company": "Company registration",
+      "tickets": "Ticket booking",
+      "full_support": "Full support"
+    },
+    "romania": {
+      "title": "ROMANIA",
+      "description": "A beautiful country in the heart of Europe with a rich history, medieval castles and picturesque Carpathians. From Transylvania to Bucharest.",
+      "visa_title": "VISAS TO ROMANIA",
+      "schengen": "Schengen visa – for tourism and business",
+      "short": "Short-term visa – up to 90 days",
+      "business": "Business visa – for business trips",
+      "student": "Student visa – for study",
+      "add_services_title": "ADDITIONAL SERVICES",
+      "castle": "Castle tours – Transylvania",
+      "ski": "Ski tours – Carpathians",
+      "city": "City tours – Bucharest, Sibiu",
+      "car": "Car rental – for travel"
+    },
+    "title_tag": "Dragon Biztrip - Visas",
+    "additional": {
+      "title": "Additional Services",
+      "docs_title": "Document Preparation",
+      "docs_desc": "Complete preparation and verification of all necessary documents for obtaining a visa",
+      "appointment_title": "Appointment Scheduling",
+      "appointment_desc": "Consulate appointment and support for document submission",
+      "tickets_title": "Flight Tickets",
+      "tickets_desc": "Flight booking according to visa center requirements",
+      "hotels_title": "Hotel Booking",
+      "hotels_desc": "Hotel booking to confirm your travel itinerary"
+    },
+    "contact": {
+      "title": "Apply for a Visa",
+      "description": "Contact us for detailed information about visa services and document consultation. We will help you choose the best visa option for your trip."
+    },
+    "page_title": "Visa Services",
+    "directions": { "title": "Our Destinations" }
   },
   "services": {
     "title": "Our Services",
-    "subtitle": "Our Professional Services",
-    "list": {
-      "visa_support": {
-        "title": "Visa Support",
-        "description": "Comprehensive visa application support:",
-        "items": [
-          "Visa type consultation",
-          "Document preparation",
-          "Form filling assistance",
-          "Consulate accompaniment",
-          "Document translation"
-        ]
-      },
-      "business_trips": {
-        "title": "Business Trip Organization",
-        "description": "Complete business trip support:",
-        "items": [
-          "Hotel booking",
-          "Partner meeting organization",
-          "Transfer and transportation",
-          "Interpreter services",
-          "24/7 support"
-        ]
-      },
-      "consulting": {
-        "title": "Business Consulting",
-        "description": "Professional business consulting services:",
-        "items": [
-          "Market analysis",
-          "Partner search",
-          "Legal support",
-          "Tax consulting",
-          "Business setup assistance"
-        ]
-      },
-      "additional": {
-        "title": "Additional Services",
-        "description": "Additional services for comfortable business operations:",
-        "items": [
-          "Document apostille",
-          "Document legalization",
-          "Notarized translation",
-          "Insurance",
-          "Flight booking"
-        ]
-      }
+    "title_tag": "Dragon Biztrip - Services",
+    "visa_support": {
+      "title": "Visa Support",
+      "description": "Comprehensive support for the visa application process:",
+      "consult": "Consultations on visa type selection",
+      "docs": "Preparation of required documents",
+      "forms": "Filling out forms and applications",
+      "translate": "Document translation"
+    },
+    "business_trips": {
+      "title": "Business Trip Organization",
+      "description": "Full support for business trips:",
+      "hotels": "Hotel booking",
+      "meetings": "Partner meeting organization",
+      "transport": "Transfer and transportation services",
+      "support": "24/7 support"
+    },
+    "consulting": {
+      "title": "Business Consulting",
+      "description": "Professional business consulting:",
+      "market": "Market analysis",
+      "tax": "Tax consulting",
+      "startup": "Business startup support"
+    },
+    "additional": {
+      "title": "Additional Services",
+      "description": "Additional services for comfortable business operations:",
+      "items": [
+        "Document apostille",
+        "Document legalization",
+        "Notarized translation",
+        "Insurance",
+        "Flight booking"
+      ]
     }
   },
   "contacts": {
@@ -284,7 +400,7 @@
       "working_hours": "Working Hours"
     },
     "form": {
-      "title": "Contact Us",
+      "title": "Contact Us in WhatsApp",
       "name": "Your Name:",
       "email": "Email:",
       "phone": "Phone:",
@@ -293,7 +409,8 @@
     },
     "social": {
       "title": "Follow Us on Social Media"
-    }
+    },
+    "title_tag": "Dragon Biztrip - Contacts"
   },
   "links": {
     "title": "Useful Links",
@@ -344,7 +461,8 @@
         "wto": "WTO - International Trade Information",
         "chamber": "Chambers of Commerce"
       }
-    }
+    },
+    "title_tag": "Dragon Biztrip - Useful Links"
   },
   "partners": {
     "title": "Our Partners",
@@ -385,7 +503,19 @@
       "title": "Become Our Partner",
       "description": "We are always open to new partnerships. If you are interested in cooperation, please contact us through the feedback form on the contacts page.",
       "button": "Contact Us"
-    }
+    },
+    "developer": {
+      "btn": "Konstantin Britanov (site developer)",
+      "name": "Konstantin Britanov",
+      "title": "Full-Stack Developer",
+      "description": "Developer of modern web applications. Specializes in frontend and backend development, creating responsive interfaces, and performance optimization.",
+      "skills": "Technologies:",
+      "contacts": "Contacts:",
+      "github": "GitHub",
+      "telegram": "Telegram",
+      "email": "Email"
+    },
+    "title_tag": "Dragon Biztrip - Partners"
   },
   "main": {
     "title": "Dragon Biztrip - Visa Services",
@@ -436,6 +566,23 @@
     "cta": {
       "title": "Join Our Satisfied Clients",
       "description": "Discover new opportunities with Dragon Biztrip. Contact us for a consultation and discuss your needs in detail."
+    },
+    "logo": "Dragon Biztrip",
+    "banner_alt": "Professional visa processing",
+    "welcome_img_alt": "Welcome",
+    "why_us_img_alt": "Why choose us",
+    "services_img_alt": "Our services",
+    "cta_img_alt": "Contact us",
+    "developer": {
+      "btn": "Konstantin Britanov (site developer)",
+      "name": "Konstantin Britanov",
+      "title": "Full-Stack Developer",
+      "description": "Developer of modern web applications. Specializes in frontend and backend development, creating responsive interfaces, and performance optimization.",
+      "skills": "Technologies:",
+      "contacts": "Contacts:",
+      "github": "GitHub",
+      "telegram": "Telegram",
+      "email": "Email"
     }
   }
 }

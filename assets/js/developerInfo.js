@@ -12,6 +12,12 @@ export function toggleDeveloperInfo() {
     } else {
         developerInfo.style.display = 'block';
         developerArrow.style.transform = 'rotate(180deg)';
+        // Применяем переводы к новым элементам (если вдруг что-то появилось динамически)
+        if (window.updateI18nContent) {
+            // Определяем текущий язык
+            const lang = localStorage.getItem('selectedLanguage') || 'ru';
+            window.updateI18nContent(lang);
+        }
     }
 }
 
